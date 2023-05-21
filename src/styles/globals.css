@@ -1,27 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.cdnfonts.com/css/inter');
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+                
+
+html {
+  background: #0E0E0F;
+  color: #D9E7EB;
+  font-family: 'Inter', sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.points-card-bg {
+  background: radial-gradient(100% 100% at 50% 0%, #14191B 0%, #131314 100%);
+  box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.3);
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.cryptoMain-card-bg {
+  background: radial-gradient(100% 100% at 50% 0%, #14191B 0%, #131314 100%);
+  box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.3);
 }
