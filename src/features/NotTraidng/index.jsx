@@ -60,12 +60,12 @@ export const NotTraidng = () => {
     ]
 
   return (
-   <div className="py-[150px] flex flex-col items-center justify-center space-y-[70px] sm:py-[20px]  sm:w-full ">
+   <div className="py-[150px] flex flex-col items-center justify-center space-y-[70px] sm:py-[20px]  sm:w-full relative ">
         <div className="flex flex-col items-center justify-center space-y-[30px]  sm:w-full">
             <span className="text-5xl font-bold font-montserrat text-center sm:text-3xl">Forsage is not <br className="hidden sm:flex" /> trading</span>
             <span className="text-xl opacity-50 text-center sm:text-base">Forsage is a network-type business with a clear <br className="hidden sm:flex" /> and transparent economic model that has been <br /> successfully operating for 3 years.</span>
         </div>
-        <img className="w-[1000px] absolute pt-[200px] left-1/2 -translate-x-1/2 z-[-10] sm:h-[1300px] sm:pt-[600px] " src="/img/shadow/traidingSahdow.png" />
+        <img className="w-[1000px] absolute top-[100px] left-1/2 -translate-x-1/2 z-[-10] sm:h-[800px] sm:top-[380px] " src="/img/shadow/traidingSahdow.png" />
             <div className="bg-[#131314] w-[600px] rounded-[30px] p-5 flex space-x-6 sm:flex-col sm:space-x-0 sm:w-full sm:space-y-8 sm:p-0 sm:bg-transparent ">
                 <div className="bg-[#131314] border border-1  h-full w-full rounded-[20px] flex flex-col sm:border-none ">
                     <span className="text-2xl mt-[15px] text-center ">Traiding</span>

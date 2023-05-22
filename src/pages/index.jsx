@@ -16,6 +16,7 @@ import {
   InvitePartners,
   RefferalLinks,
   OnePager,
+  ForsageSources,
 } from '@/features';
 
 const Index = () => {
@@ -37,6 +38,7 @@ const Index = () => {
       <InvitePartners />
       <RefferalLinks />
       <OnePager />
+      <ForsageSources />
     </div>
   )
 }
