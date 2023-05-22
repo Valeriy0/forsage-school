@@ -8,13 +8,13 @@ export const OnePager = () => {
     'If you are holding an online event — just send this one-pager to the participants!',
   ]
   return (
-    <div className="flex flex-col items-center max-w-[1170px] w-full">
+    <div className="flex flex-col items-center max-w-[1170px] w-full sm:max-w-full">
       <div className="flex flex-col items-center text-center space-y-10 max-w-[970px] w-full space-y-10 mb-[60px]">
         <span className="text-3xl font-semibold">One-Pager</span>
         <span className="opacity-50 ">When you are just getting started with Forsage, we recommend studying a presentation where you can find all necessary information about the mechanic of platforms, levels, income, etc.</span>
       </div>
-      <div className="grid grid-cols-2 gap-[30px]">
-        <div className="grid grid-cols-2 gap-[30px]">
+      <div className="grid grid-cols-2 gap-[30px] sm:grid-cols-1">
+        <div className="grid grid-cols-2 gap-[30px] sm:grid-cols-1">
           {info.map((item, itemIndex) => {
             return (
               <div className="flex flex-col justify-between rounded-[30px] onePager-card p-10" key={itemIndex}>
