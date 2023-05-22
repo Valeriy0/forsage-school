@@ -48,3 +48,11 @@ html {
   background: radial-gradient(100% 100% at 50% 0%, #14191B 0%, #131314 100%), rgba(217, 231, 235, 0.02);
   box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.3);
 }
+
+.onepager-big-shadow {
+  box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.3);
+}
+
+.onepager-dot-shadow {
+  box-shadow: inset 0px 0px 10px rgba(255, 255, 255, 0.1);
+}

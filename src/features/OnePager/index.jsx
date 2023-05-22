@@ -18,14 +18,14 @@ export const OnePager = () => {
           {info.map((item, itemIndex) => {
             return (
               <div className="flex flex-col justify-between rounded-[30px] onePager-card p-10" key={itemIndex}>
-                <img className="w-10 h-10" src="/img/onePager/dot.png" alt="" />
+                <img className="w-10 h-10 onepager-dot-shadow rounded-full" src="/img/onePager/dot.png" alt="" />
                 <span className="opacity-50">{item}</span>
               </div>
             )
           })}
         </div>
         <div className="">
-          <img className="max-h-[550px] h-full" src="/img/onePager/big.png" alt="" />
+          <img className="max-h-[550px] h-full onepager-big-shadow" src="/img/onePager/big.png" alt="" />
         </div>
       </div>
     </div> 
