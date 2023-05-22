@@ -34,9 +34,11 @@ export const CryptoMain = () => {
           return (
             <div className="flex flex-col items-center flex-1 space-y-10 sm:space-y-[30px]">
               <span className="text-6xl font-semibold text-gradient font-montserrat">0{itemIndex+1}</span>
-              <div className="sm:w-full h-full flex flex-col items-center text-center p-10 sm:px-5 cryptoMain-card-bg rounded-[30px] space-y-5 border border-4 border_gold_gradient" key={itemIndex}>
-                <span className="text-2xl font-montserrat">{item?.title}</span>
-                <span className="text-sm opacity-50">{item?.desc}</span>
+              <div className="cryptoMain-gradient rounded-[30px] p-[1px]">
+                <div className="sm:w-full h-full flex flex-col items-center text-center p-10 sm:px-5 cryptoMain-card-bg rounded-[30px] space-y-5" key={itemIndex}>
+                  <span className="text-2xl font-montserrat">{item?.title}</span>
+                  <span className="text-sm opacity-50">{item?.desc}</span>
+                </div>
               </div>
             </div>
           )
