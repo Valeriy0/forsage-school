@@ -4,7 +4,7 @@ export const Steps = () => {
     return (
         <div className="flex flex-col items-center justify-center space-y-11 pt-[200px]">
               <img className="w-[60vh] sm:w-[30vh] absolute left-0 z-[-1]" src="/img/shadow/stepsBlueShadow.png"/>
-            <span className="text-5xl font-bold sm:text-4xl sm:text-center">The process <br className="hidden sm:flex" /> includes 6 steps:</span>
+            <span className="text-5xl font-bold sm:text-4xl sm:text-center font-montserrat">The process <br className="hidden sm:flex" /> includes 6 steps:</span>
             <div className="opacity-50 space-y-5 flex flex-col items-center justify-center  w-full">
                 <div className="bg-[#0E0E0F] rounded-[20px] pl-9 pr-6 py-4 border border-1 border-white-100 flex flex-row  right-0 justify-between w-[380px] mr-auto">
                 <img className="w-[60vh] sm:w-[30vh] absolute right-0 z-[-10] " src="/img/shadow/stepsGreenShadow.png"/>

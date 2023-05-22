@@ -18,7 +18,7 @@ export const RefferalLinks = () => {
   return (
     <div className="max-w-[1170px] w-full flex flex-col items-center sm:max-w-full sm:w-full ">
       <div className="flex flex-col max-w-[800px] w-full items-center text-center space-y-10 mb-12">
-        <span className="font-semibold text-3xl">Referral link and its potential</span>
+        <span className="font-semibold text-5xl font-montserrat">Referral link and its potential</span>
         <span className="opacity-50">Your profit in Forsage depends on your partners. When you register, a personal referral link is created for you. Once someone clicks on it, they automatically become your partner.</span>
       </div>
       <div className="flex justify-between w-full space-x-[30px] sm:flex-col sm:space-x-0 sm:text-center sm:items-center ">

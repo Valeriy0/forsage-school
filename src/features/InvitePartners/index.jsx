@@ -12,7 +12,7 @@ export const InvitePartners = () => {
       <img className="absolute right-0 bottom-0 sm:hidden" src="/img/invitePartners/right.png" alt="" />
       <div className="max-w-[866px] w-full flex flex-col items-center">
         <div className="flex flex-col items-center text-center space-y-10 mb-[60px]">
-          <span className="text-4xl font-semibold">How to invite new <br/> partners to Forsage</span>
+          <span className="text-5xl font-semibold font-montserrat sm:text-4xl ">How to invite new <br/> partners to Forsage</span>
           <span className="opacity-50">The most convenient and powerful technique is inviting people on social media.</span>
         </div>
         <div className="flex flex-col space-y-5 z-10">

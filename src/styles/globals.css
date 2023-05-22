@@ -3,7 +3,12 @@
 @tailwind utilities;
 @import url('https://fonts.cdnfonts.com/css/inter');
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
                 
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
 
 html {
   background: #0E0E0F;
@@ -72,3 +77,12 @@ html {
 	linear-gradient(274.89deg, #FFE663 -5.31%, #C39C42 35.96%, #AF8D2C 59.62%, #FFE467 100.51%);
 	border: 4px solid transparent;
 }
+
+@font-face {
+	font-family: 'druk';
+	src: url("/fonts/drukwidecyr-bold.woff2"),
+	url("/fonts/drukwidecyr-bold.woff");
+	font-style: normal;
+	font-display: swap;
+}
+

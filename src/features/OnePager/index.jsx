@@ -11,8 +11,8 @@ export const OnePager = () => {
     <div className="flex flex-col items-center w-full w-full sm:max-w-full relative ">
       <img className="absolute top-0 z-[-1] w-full sm:top-14 " src="/img/onePager/bg.png"/>
       <div className="  flex flex-col items-center text-center space-y-10 max-w-[970px] w-full space-y-10 mb-[60px] mt-[200px] sm:mt-[120px]">
-        <span className="text-3xl font-semibold">One-Pager</span>
-        <span className="opacity-50 ">When you are just getting started with Forsage, we recommend studying a presentation where you can find all necessary information about the mechanic of platforms, levels, income, etc.</span>
+        <span className="text-5xl font-semibold font-montserrat sm:text-4xl">One-Pager</span>
+        <span className="opacity-50 text-xl ">When you are just getting started with Forsage, we recommend studying a presentation where you can find all necessary information about the mechanic of platforms, levels, income, etc.</span>
       </div>
       <div className="grid grid-cols-2 gap-[30px] sm:grid-cols-1 max-w-[1170px]">
         <div className="grid grid-cols-2 gap-[30px] sm:grid-cols-1">
@@ -31,10 +31,10 @@ export const OnePager = () => {
       </div>
       <div className="flex space-x-9 pt-[70px] sm:hidden">
         <button className="border border-white rounded-[10px] px-6 py-1.5 flex items-center justify-center space-x-3 sm:w-full sm:py-3">
-          <span className="">Download Color</span>
+          <span className="font-montserrat">Download Color</span>
         </button>
         <button className="border border-white rounded-[10px] px-6 py-1.5 flex items-center justify-center space-x-3 sm:w-full sm:py-3">
-          <span>Download BW</span>
+          <span className="font-montserrat">Download BW</span>
         </button>
       </div>
     </div> 

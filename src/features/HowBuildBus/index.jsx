@@ -22,7 +22,7 @@ export const HowBuildBus = () => {
     <div className="relative flex flex-col max-w-[1170px] w-full space-y-[100px]">
       <img className="absolute top-0 right-0 max-w-[45%] w-full sm:hidden" src="/img/howBuildBus/circle.png" alt="" />
       <div className="flex flex-col space-y-10 max-w-[600px] sm:text-center">
-        <span className="text-4xl font-semibold">How to build a business with Forsage?</span>
+        <span className="text-4xl font-semibold font-montserrat">How to build a business with Forsage?</span>
         <div className="flex flex-col space-y-5 opacity-50">
           <span>Do these 3 steps regularly for success, and train your partners to do the same.</span>
           <span>Forsage School courses, Forsage support, and your Leader will help you with each of these steps!</span>
