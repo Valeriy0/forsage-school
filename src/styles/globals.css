@@ -28,3 +28,18 @@ html {
 .firstWin-button-gradient { 
   background: radial-gradient(97.81% 91.25% at 13.75% 8.75%, rgba(42, 245, 152, 100) 0%, rgba(0, 158, 253, 100) 100%);
 }
+
+.howBuildBus-card-1 {
+  background: radial-gradient(100% 100% at 50% 0%, #14191B 0%, #131314 100%);
+  box-shadow: 0px 50px 50px -30px #000000, 0px 0px 100px rgba(173, 255, 39, 0.2);
+}
+
+.howBuildBus-card-2 {
+  background: radial-gradient(100% 100% at 50% 0%, #14191B 0%, #131314 100%);
+  box-shadow: 0px 50px 50px -30px #000000, 0px 0px 100px rgba(27, 159, 255, 0.2);
+}
+
+.howBuildBus-card-3 {
+  background: radial-gradient(100% 100% at 50% 0%, #14191B 0%, #131314 100%);
+  box-shadow: 0px 50px 50px -30px #000000, 0px 0px 100px rgba(244, 209, 21, 0.2);
+}
