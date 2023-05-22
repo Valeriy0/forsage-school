@@ -11,3 +11,4 @@ export { Security } from './Security';
 export { Marketing } from './Marketing';
 export { XQore } from './XQore';
 export { HowBuildBus } from './HowBuildBus';
+export { InvitePartners } from './InvitePartners';

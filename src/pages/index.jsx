@@ -12,7 +12,8 @@ import {
   Security, 
   Marketing, 
   XQore, 
-  HowBuildBus 
+  HowBuildBus,
+  InvitePartners
 } from '@/features';
 
 const Index = () => {
@@ -31,6 +32,7 @@ const Index = () => {
       <Marketing />
       <XQore />
       <HowBuildBus />
+      <InvitePartners />
     </div>
   )
 }
