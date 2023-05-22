@@ -21,8 +21,8 @@ export const FirstWin = () => {
   
 
   const wrapperStyle = {
-    width: `url(/img/backgrounds/1-button.png)`,
-    height: 'cover',
+    backgroundImage: `url(/img/backgrounds/1-button.png)`,
+    backgroundSize: 'cover',
     backgroundPosition: 'center',
   };
 
