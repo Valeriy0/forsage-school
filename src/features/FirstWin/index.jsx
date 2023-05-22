@@ -37,7 +37,7 @@ export const FirstWin = () => {
       </button>    
       <img className="sm:hidden" src="/img/backgrounds/1.png" alt="" />
       <img className="hidden sm:flex" src="/img/backgrounds/1-mobile.png" alt="" />
-      <div className={`absolute right-0 top-1/2 -translate-y-1/2 z-10 ${!isLoadingAnim && '!w-[60%] !h-[120%]'} `}>
+      <div className={`absolute sm:hidden right-0 top-1/2 -translate-y-1/2 z-10 ${!isLoadingAnim && '!w-[60%] !h-[120%]'} `}>
         <Spline
           scene={myScene}
           onLoad={onLoad}
