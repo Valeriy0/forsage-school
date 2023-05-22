@@ -2,8 +2,8 @@ import React from "react";
 
 export const Marketing = () => {
     return (
-        <div className="flex items-center  mt-[150px]">
-            <div className="space-y-8 flex flex-col items-start">
+        <div className="flex items-center mt-[150px] flex-col">
+            <div className="space-y-8 flex flex-col items-start sm:text-center">
                 <span className="text-5xl">Marketing</span>
                 <span className="w-[360px] opacity-50">
                 FORSAGE Marketing is a matrix system based on decentralized smart contracts technology. Profits come from inviting new partners to your team, who, once registered, stay with you forever, as it is recorded in the blockchain.
@@ -15,7 +15,7 @@ export const Marketing = () => {
                     <img className="w-[7px]" src="/icons/arrowRIght.svg" />
                 </button>
             </div>
-            <div className=" flex items-center justify-center">
+            <div className=" flex items-center justify-center relative">
                 <img className="w-[120vh] absolute" src="/img/shadow/traidingSahdow.png"/>
                 <img className="w-[110vh] z-[10]" src="/img/marketing/Marketing.png" />
             </div>

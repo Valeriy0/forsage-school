@@ -2,7 +2,7 @@ import React from "react";
 
 export const XQore = () => {
   return (
-    <div className="flex justify-between max-w-[1200px] w-full space-x-[100px]">
+    <div className="flex justify-between max-w-[1200px] w-full space-x-[100px] hidden">
       <div className="flex-1">
         <img className="" src="/img/xQore/table.png" alt="" />
       </div>
