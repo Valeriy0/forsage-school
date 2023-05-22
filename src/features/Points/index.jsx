@@ -26,13 +26,13 @@ export const Points = () => {
   ]
 
   return (
-    <div className="grid grid-cols-2 gap-x-[60px] gap-y-[100px]">
+    <div className="grid grid-cols-2 sm:grid-cols-1 gap-x-[60px] gap-y-[100px]">
       {info.map((item, itemIndex) => {
         return (
-          <div className="h-[200px] w-[400px] px-[30px] relative flex flex-col items-center points-card-bg rounded-[30px]">
+          <div className="min-h-[200px] w-[400px] sm:w-full relative flex flex-col items-center points-card-bg rounded-[30px]">
             <img className="z-10 mt-[-60px] h-[120px]" src={item?.icon} alt="" />
             <img className="absolute top-0 left-1/2 -translate-x-1/2" src={item?.iconBg} alt="" />
-            <span className="pt-10 px-10 text-center opacity-50 text-sm">{item?.text}</span>
+            <span className="p-10 sm:px-5 text-center opacity-50 sm:text-lg">{item?.text}</span>
           </div>
         )
       })}

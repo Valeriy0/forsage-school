@@ -20,3 +20,11 @@ html {
   background: radial-gradient(100% 100% at 50% 0%, #14191B 0%, #131314 100%);
   box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.3);
 }
+
+.firstWin-button-bg { 
+  background: radial-gradient(97.81% 91.25% at 13.75% 8.75%, rgba(42, 245, 152, 0.2) 0%, rgba(0, 158, 253, 0.2) 100%);
+}
+
+.firstWin-button-gradient { 
+  background: radial-gradient(97.81% 91.25% at 13.75% 8.75%, rgba(42, 245, 152, 100) 0%, rgba(0, 158, 253, 100) 100%);
+}

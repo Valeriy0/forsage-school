@@ -68,6 +68,7 @@ module.exports = {
           'pink-red-light-brown': ['#FE5A75', '#FEC464'],
         },
         background: {
+          'textWhite': '#D9E7EB',
           'white-200': 'rgba(255, 255, 255, 0.2)',
           'dark-1000': '#0D0415',
           'dark-900': '#161522',
