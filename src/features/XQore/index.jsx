@@ -9,7 +9,7 @@ export const XQore = () => {
       <div className="flex-1 flex flex-col pt-16">
         <div className="flex flex-col space-y-5 mb-10">
           <span className="text-4xl font-semibold">xQore Levels</span>
-          <span className="opacity-50 max-w-[470px] w-full sm:max-w-full">The xQore program is a team marketing tool designed to facilitate team building and increase overall Forsage participant engagement.</span>
+          <span className="opacity-50 max-w-[470px] w-full sm:max-w-full">The xqore program is a team marketing tool designed to facilitate team building and increase overall Forsage participant engagement.</span>
         </div>
         <img className="max-w-[410px]" src="/img/xQore/matrix.png" alt="" />
       </div>
