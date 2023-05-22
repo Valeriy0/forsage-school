@@ -42,9 +42,12 @@ export const CryptoMain = () => {
           )
         })}
       </div>
-      <div className="flex flex-col">
-        <span>And that is just a part of the advantages! You can learn more about cryptocurrency in this article</span>
-        <button></button>
+      <div className="flex flex-col mt-[100px] sm:mt-[50px] items-center space-y-5">
+        <span className="opacity-50 text-xl text-center sm:text-sm">And that is just a part of the advantages! You can <br className="hidden sm:flex" /> learn more about cryptocurrency in this article</span>
+        <button className="border border-white rounded-[10px] px-6 py-1.5 flex items-center justify-center space-x-3 sm:w-full">
+            <span>About</span>
+            <img className="w-[7px]" src="/icons/arrowRIght.svg" />
+        </button>
       </div>
     </div>
   )
