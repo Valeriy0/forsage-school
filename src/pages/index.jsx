@@ -1,5 +1,19 @@
 import React from 'react';
-import { FirstWin, Second, Points, CryptoMain, NotTraidng, Earning, InstallWallet, BuyCrypto, Steps, Security, Marketing, XQore } from '@/features';
+import { 
+  FirstWin, 
+  Second, 
+  Points, 
+  CryptoMain, 
+  NotTraidng, 
+  Earning, 
+  InstallWallet, 
+  BuyCrypto, 
+  Steps, 
+  Security, 
+  Marketing, 
+  XQore, 
+  HowBuildBus 
+} from '@/features';
 
 const Index = () => {
   return (
@@ -16,6 +30,7 @@ const Index = () => {
       <Security />
       <Marketing />
       <XQore />
+      <HowBuildBus />
     </div>
   )
 }
