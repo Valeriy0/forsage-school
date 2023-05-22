@@ -13,7 +13,8 @@ import {
   Marketing, 
   XQore, 
   HowBuildBus,
-  InvitePartners
+  InvitePartners,
+  RefferalLinks,
 } from '@/features';
 
 const Index = () => {
@@ -33,6 +34,7 @@ const Index = () => {
       <XQore />
       <HowBuildBus />
       <InvitePartners />
+      <RefferalLinks />
     </div>
   )
 }
