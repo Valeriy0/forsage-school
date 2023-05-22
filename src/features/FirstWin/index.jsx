@@ -1,16 +1,32 @@
-import react from "react";
+import react, { useRef, useState } from "react";
 import Spline from "@splinetool/react-spline";
 
 export const FirstWin = () => {
 
+  const spline = useRef();
+  const [isLoadingAnim, setIsLoadingAnim] = useState(true);
+
+  let animationWrapper = {};
+
+  function onLoad(splineApp) {
+    animationWrapper = {
+      width: `200%`,
+      height: `200%`,
+    };
+    setIsLoadingAnim(false);
+    spline.current = splineApp;
+  }
+
+
+  
+
   const wrapperStyle = {
-    backgroundImage: `url(/img/backgrounds/1-button.png)`,
-    backgroundSize: 'cover',
+    width: `url(/img/backgrounds/1-button.png)`,
+    height: 'cover',
     backgroundPosition: 'center',
   };
 
   const myScene= 'https://prod.spline.design/WBWqwfLkAoaoFy7O/scene.splinecode';
-
   return (
     <div className="relative flex w-full max-w-[1300px] w-full">
       <img className="sm:hidden absolute h-[37px] left-[16px] top-[34px]" src="/img/logo.png" alt="" />
@@ -21,8 +37,11 @@ export const FirstWin = () => {
       </button>    
       <img className="sm:hidden" src="/img/backgrounds/1.png" alt="" />
       <img className="hidden sm:flex" src="/img/backgrounds/1-mobile.png" alt="" />
-      <div className="absolute sm:hidden right-0 top-1/2 -translate-y-1/2 z-10 w-[60%] h-[120%]">
-        <Spline className="" scene={myScene} />
+      <div className={`absolute right-0 top-1/2 -translate-y-1/2 z-10 ${!isLoadingAnim && '!w-[60%] !h-[120%]'} `}>
+        <Spline
+          scene={myScene}
+          onLoad={onLoad}
+        />
       </div>
     </div>
   )
