@@ -15,5 +15,5 @@ export { InvitePartners } from './InvitePartners';
 export { RefferalLinks } from './RefferalLinks';
 export { OnePager } from './OnePager';
 export { ForsageSources } from './ForsageSources';
-
+export { Testi } from './Testi';
 

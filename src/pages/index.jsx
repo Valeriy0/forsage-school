@@ -17,6 +17,7 @@ import {
   RefferalLinks,
   OnePager,
   ForsageSources,
+  Testi,
 } from '@/features';
 
 const Index = () => {
@@ -32,6 +33,7 @@ const Index = () => {
       <BuyCrypto />
       <Steps />
       <Security />
+      <Testi />
       <Marketing />
       <XQore />
       <HowBuildBus />
