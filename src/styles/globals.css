@@ -56,3 +56,12 @@ html {
 .onepager-dot-shadow {
   box-shadow: inset 0px 0px 10px rgba(255, 255, 255, 0.1);
 }
+
+.text-gradient {
+  font-weight: 600;
+  background: linear-gradient(90deg,#F0B90B 0%,#D358A9);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: rgba(0,0,0,0);
+  -webkit-box-decoration-break: clone;
+}
