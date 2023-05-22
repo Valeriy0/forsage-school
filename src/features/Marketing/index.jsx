@@ -2,7 +2,7 @@ import React from "react";
 
 export const Marketing = () => {
     return (
-        <div className="flex items-center mt-[150px] flex-col">
+        <div className="flex items-center mt-[150px] sm:flex-col">
             <div className="space-y-8 flex flex-col items-start sm:text-center">
                 <span className="text-5xl sm:w-full">Marketing</span>
                 <span className="w-[360px] opacity-50">

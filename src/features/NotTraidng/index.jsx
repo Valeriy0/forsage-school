@@ -81,7 +81,7 @@ export const NotTraidng = () => {
                     </div>
                 </div>
                 <div className="bg-[#131314] border border-1 boder-green h-full w-full rounded-[20px] flex flex-col ">
-                    <span className="text-2xl mt-[15px] text-center">Forsage</span>
+                    <span className="text-2xl mt-[15px] text-center text-gradient">Forsage</span>
                     <div className="my-[40px] space-y-6">
                     {forsage.map((item, itemIndex) => {
                         return (

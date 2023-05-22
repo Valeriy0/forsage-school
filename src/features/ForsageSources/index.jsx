@@ -84,7 +84,7 @@ export const ForsageSources = () => {
                 <div className="absolute w-full backdrop-blur-3xl  bottom-0 rounded-[30px] flex justify-evenly pt-[80px] sm:flex-col sm:items-center sm:justify-center pb-8 space-y-5 ">
                     <div className="flex flex-col space-y-3 sm:items-center sm:justify-center">
                         <span className="text-2xl">Help</span>
-                        <div className="flex flex-col items-center space-y-2">
+                        <div className="flex flex-col sm:items-center space-y-2">
                         {help.map((item) => {
                         return (
                             <span className="opacity-50">{item.title}</span>
@@ -94,7 +94,7 @@ export const ForsageSources = () => {
                     </div>
                     <div className="flex flex-col space-y-3 sm:items-center sm:justify-center ">
                     <span className="text-2xl ">Telegram Bots</span>
-                    <div className="flex flex-col items-center space-y-2">
+                    <div className="flex flex-col sm:items-center space-y-2">
                         {bots.map((item) => {
                             return (
                                 <span className="opacity-50">{item.title}</span>
@@ -104,7 +104,7 @@ export const ForsageSources = () => {
                     </div>
                     <div className="flex flex-col space-y-3 sm:items-center sm:justify-center">
                     <span className="text-2xl">Join us</span>
-                    <div className="flex flex-col items-center space-y-2">
+                    <div className="flex flex-col sm:items-center space-y-2">
                     {join.map((item) => {
                             return (
                                 <span className="opacity-50">{item.title}</span>

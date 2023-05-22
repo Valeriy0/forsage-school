@@ -31,7 +31,7 @@ export const FirstWin = () => {
     <div className="relative flex w-full max-w-[1300px] w-full">
       <img className="sm:hidden absolute h-[37px] left-[16px] top-[34px]" src="/img/logo.png" alt="" />
       <img className="hidden sm:flex absolute h-[37px] left-[16px] top-[34px]" src="/img/logo-mobile.png" alt="" />
-      <span className="absolute left-[5%] top-1/2 sm:top-[40%] -translate-y-1/2 sm:left-1/2 sm:-translate-x-1/2 sm:w-[100%] sm:text-center sm:text-4xl text-5xl font-bold"> <span className="text-gradient"> Start a business </span> <br/> with Forsage</span>
+      <span className="absolute left-[5%] top-1/2 sm:top-[40%] -translate-y-1/2 sm:left-1/2 sm:-translate-x-1/2 sm:w-[100%] sm:text-center sm:text-4xl text-5xl font-bold"> Start a business <br/> with<span className="text-gradient"> Forsage</span> </span>
       <button style={wrapperStyle} className="absolute bottom-[-7.5%] left-[11.75%] h-[23.5%] w-[12.75%] sm:bottom-[-12%] sm:left-1/2 sm:-translate-x-1/2 sm:h-[42%] sm:w-[49%] rounded-full"> 
         <span className="text-xl font-semibold text-textWhite"> Start </span>
       </button>    

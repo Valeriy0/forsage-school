@@ -27,15 +27,15 @@ export const CryptoMain = () => {
     <div className="flex flex-col w-full items-center justify-center" style={wrapperStyle}>
       <div className="flex justify-center items-center w-full max-w-[1021px] sm:max-w-full sm:flex-col space-x-[181px] sm:space-x-0 sm:space-y-[60px] h-[586px] sm:h-auto sm:pb-[60px]">
         <img className="w-[240px] sm:h-[150px] sm:w-[150px]" src="/img/cryptoMain/logo.png" alt="" />
-        <span className="text-6xl sm:text-4xl sm:text-center sm:font-semibold">Cryptocurrency <br/> is the money of <br/> tomorrow</span>
+        <span className="text-6xl sm:text-4xl sm:text-center sm:font-semibold text-gradient">Cryptocurrency <br/> is the money of <br/> tomorrow</span>
       </div>
       <div className="flex space-x-[30px] max-w-[1170px] sm:flex-col sm:space-x-0 sm:space-y-[30px] sm:max-w-full">
         {info.map((item, itemIndex) => {
           return (
             <div className="flex flex-col items-center flex-1 space-y-10 sm:space-y-[30px]">
-              <span className="text-6xl font-semibold">0{itemIndex+1}</span>
-              <div className="sm:w-full h-full flex flex-col items-center text-center p-10 sm:px-5 cryptoMain-card-bg rounded-[30px] space-y-5" key={itemIndex}>
-                <span className="text-2xl">{item?.title}</span>
+              <span className="text-6xl font-semibold text-gradient">0{itemIndex+1}</span>
+              <div className="sm:w-full h-full flex flex-col items-center text-center p-10 sm:px-5 cryptoMain-card-bg rounded-[30px] space-y-5 border border-4 border_gold_gradient" key={itemIndex}>
+                <span className="text-2xl ">{item?.title}</span>
                 <span className="text-sm opacity-50">{item?.desc}</span>
               </div>
             </div>
@@ -44,7 +44,7 @@ export const CryptoMain = () => {
       </div>
       <div className="flex flex-col mt-[100px] sm:mt-[50px] items-center space-y-5">
         <span className="opacity-50 text-xl text-center sm:text-sm">And that is just a part of the advantages! You can <br className="hidden sm:flex" /> learn more about cryptocurrency in this article</span>
-        <button className="border border-white rounded-[10px] px-6 py-1.5 flex items-center justify-center space-x-3 sm:w-full">
+        <button className="border border-4 border_gold_gradient rounded-[10px] px-6 py-1.5 flex items-center justify-center space-x-3 sm:w-full">
             <span>About</span>
             <img className="w-[7px]" src="/icons/arrowRIght.svg" />
         </button>

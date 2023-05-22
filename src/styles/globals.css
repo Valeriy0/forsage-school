@@ -59,9 +59,16 @@ html {
 
 .text-gradient {
   font-weight: 600;
-  background: linear-gradient(90deg,#F0B90B 0%,#D358A9);
+  background: linear-gradient(95.44deg, #2AF598 16.46%, #009EFD 102.61%);
   -webkit-background-clip: text;
   background-clip: text;
-  -webkit-text-fill-color: rgba(0,0,0,0);
+  -webkit-text-fill-color: transparent;
   -webkit-box-decoration-break: clone;
+}
+
+.border_gold_gradient {
+	border-image: linear-gradient(274.89deg, #FFBA81 -5.31%, #C26748 35.96%, #B2513B 59.62%, #FFBA81 100.51%);;
+	background: linear-gradient(rgba(36, 37, 38, 1), rgba(36, 37, 38, 1)) padding-box,
+	linear-gradient(274.89deg, #FFE663 -5.31%, #C39C42 35.96%, #AF8D2C 59.62%, #FFE467 100.51%);
+	border: 4px solid transparent;
 }

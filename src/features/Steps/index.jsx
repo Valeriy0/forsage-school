@@ -2,7 +2,7 @@ import React from "react";
 
 export const Steps = () => {
     return (
-        <div className="flex flex-col items-center justify-center  space-y-11 ">
+        <div className="flex flex-col items-center justify-center space-y-11 pt-[200px]">
               <img className="w-[60vh] sm:w-[30vh] absolute left-0 z-[-1]" src="/img/shadow/stepsBlueShadow.png"/>
             <span className="text-5xl font-bold sm:text-4xl sm:text-center">The process <br className="hidden sm:flex" /> includes 6 steps:</span>
             <div className="opacity-50 space-y-5 flex flex-col items-center justify-center  w-full">
