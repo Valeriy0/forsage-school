@@ -13,3 +13,4 @@ export { XQore } from './XQore';
 export { HowBuildBus } from './HowBuildBus';
 export { InvitePartners } from './InvitePartners';
 export { RefferalLinks } from './RefferalLinks';
+export { OnePager } from './OnePager';
