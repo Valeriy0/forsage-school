@@ -18,7 +18,7 @@ export const Earning = ({ title, testContent }) => {
     }
 
   return (
-        <div className="flex flex-col items-center space-y-14 pt-[50px] w-full sm:space-y-0 sm:w-full">
+        <div id={title} className="flex flex-col items-center space-y-14 pt-[50px] w-full sm:space-y-0 sm:w-full">
             <div className="flex justify-center sm:w-full ">
                 <img className="absolute h-[23vh]  left-0 hidden sm:flex" src="/img/earning/gamepadMob.png" />
                 <span className="text-4xl font-medium sm:text-3xl sm:mt-[30px] sm:font-bold font-montserrat">Let's recap</span>
@@ -43,8 +43,8 @@ export const Earning = ({ title, testContent }) => {
                                     const isTrue = testContent[itemIndex]?.isTrue;
                                     return (
                                         <div onClick={() => setCurrentAnswer(itemIndex)} className={`flex items-center justify-center space-x-5 ${isChecked ? isTrue ? 'test-gradient-suc' : 'test-gradient-err' : 'opacity-50'}`}>
-                                            <input checked={isChecked} type="radio" id={`input-${itemIndex}`} className="rounded-full border border-1 border-white p-2" />
-                                            <label for={`input-${itemIndex}`}>{item?.title}</label>
+                                            <input checked={isChecked} type="radio" id={`input-${title}-${itemIndex}`} className="rounded-full border border-1 border-white p-2" />
+                                            <label for={`input-${title}-${itemIndex}`}>{item?.title}</label>
                                         </div>
                                     )
                                 })}
