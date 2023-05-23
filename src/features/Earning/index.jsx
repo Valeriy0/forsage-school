@@ -1,7 +1,7 @@
 import react, { useState } from "react";
 
 
-export const Earning = ({ testContent }) => {
+export const Earning = ({ title, testContent }) => {
 
     const [currentAnswer, setCurrentAnswer] = useState(null);
     const isCurrentTrue = !!testContent[currentAnswer]?.isTrue ? testContent[currentAnswer]?.isTrue : false;
@@ -36,7 +36,7 @@ export const Earning = ({ testContent }) => {
                                 </div>
                             </div>
 
-                            <span className="text-2xl font-bold text-center font-montserrat ">How do you earn at FORSAGE?</span>
+                            <span className="text-2xl font-bold text-center font-montserrat ">{title}</span>
                             <div className="flex flex-col items-start space-y-4 ">
                                 {testContent.map((item, itemIndex) => {
                                     const isChecked = itemIndex === currentAnswer;
@@ -51,10 +51,10 @@ export const Earning = ({ testContent }) => {
                             </div>
                         </div>
                     </div>
-                    <div className={`opacity-50 h-[200px] w-full max-w-[500px] button-gradient p-[1px] flex justify-center items-center absolute top-[180px] sm:top-[10/12] z-[-10] rounded-[30px] ${!!testContent[currentAnswer] ? isCurrentTrue ? 'button-gradient' : 'test-gradient-wrapper-err' : 'button-gradient'}`}> 
+                    <div className={`opacity-50 h-[200px] w-full max-w-[500px] button-gradient p-[1px] flex justify-center items-center absolute bottom-[-30px] z-[-10] rounded-[30px] ${!!testContent[currentAnswer] ? isCurrentTrue ? 'button-gradient' : 'test-gradient-wrapper-err' : 'button-gradient'}`}> 
                         <div className="w-full h-full rounded-[30px]  px-20 bg-[#14191B]"></div>
                     </div>
-                    <div className={`opacity-20 h-[200px] w-full max-w-[450px] button-gradient p-[1px] flex justify-center items-center absolute top-[200px] sm:top-[10/12] z-[-15] rounded-[30px] ${!!testContent[currentAnswer] ? isCurrentTrue ? 'button-gradient' : 'test-gradient-wrapper-err' : 'button-gradient'}`}> 
+                    <div className={`opacity-20 h-[200px] w-full max-w-[450px] button-gradient p-[1px] flex justify-center items-center absolute bottom-[-60px] z-[-15] rounded-[30px] ${!!testContent[currentAnswer] ? isCurrentTrue ? 'button-gradient' : 'test-gradient-wrapper-err' : 'button-gradient'}`}> 
                         <div className="w-full h-full rounded-[30px]  px-20 bg-[#14191B]"></div>
                     </div>
                 </div>

@@ -38,29 +38,29 @@ const Index = () => {
   ];
   const testContent2 = [
     {
-        title: 'Activate levels in programs and wait for passive income.',
+        title: 'No, the information about the transactions and their number is hidden.',
         isTrue: false,
     },
     {
-        title: 'Invite partners to your team and activate levels and programs together.',
+        title: 'Yes, each transaction and all information about it can be viewed on the blockchain.',
         isTrue: true,
     },
     {
-        title: 'Wait for income from your upline partner.',
+        title: 'Yes, but only developers can view transactions and their number.',
         isTrue: false,
     },
   ];
   const testContent3 = [
     {
-        title: 'Activate levels in programs and wait for passive income.',
-        isTrue: false,
-    },
-    {
-        title: 'Invite partners to your team and activate levels and programs together.',
+        title: 'There are no income limits or fees.',
         isTrue: true,
     },
     {
-        title: 'Wait for income from your upline partner.',
+        title: 'Up to $25,000 per account.',
+        isTrue: false,
+    },
+    {
+        title: 'No income limit, but there is a 5% fee on each transaction.',
         isTrue: false,
     },
   ];
@@ -72,19 +72,19 @@ const Index = () => {
       <Points />
       <CryptoMain />
       <NotTraidng />
-      <Earning testContent={testContent1} />
+      <Earning title='How do you earn at Forsage ?' testContent={testContent1} />
       <InstallWallet />
       <BuyCrypto />
       <Steps />
       <Security />
-      <Earning testContent={testContent2} />
+      <Earning title='Is it possible to see all the transactions in Forsage?' testContent={testContent2} />
       {/* <Testi /> */}
       <Marketing />
       <XQore />
       <HowBuildBus />
       <InvitePartners />
       <RefferalLinks />
-      <Earning testContent={testContent3} />
+      <Earning title='What are the income limits in Forsage?' testContent={testContent3} />
       <OnePager />
       <ForsageSources />
     </div>
