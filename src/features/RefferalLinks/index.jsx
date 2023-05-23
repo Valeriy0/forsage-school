@@ -24,7 +24,7 @@ export const RefferalLinks = () => {
         <span className="font-semibold text-5xl font-montserrat">Referral link and its potential</span>
         <span className="opacity-50">Your profit in Forsage depends on your partners. When you register, a personal referral link is created for you. Once someone clicks on it, they automatically become your partner.</span>
       </div>
-      <div className="flex justify-between w-full space-x-[30px] sm:flex-col sm:space-x-0 sm:text-center sm:items-center ">
+      <div className="flex justify-between w-full space-x-[30px] sm:flex-col sm:space-x-0 sm:space-y-10 sm:text-center sm:items-center ">
         {info?.map((item, itemIndex) => {
           return (
             <div className={`p-[1px] rounded-[30px] ${item?.border}`} key={itemIndex}>            

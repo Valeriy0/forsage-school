@@ -66,8 +66,8 @@ export const ForsageSources = () => {
             <span className="sm:px-4 text-5xl font-bold sm:text-4xl w-full text-center font-montserrat">All official sources of FORSAGE</span>
             <div className="sm:px-4 relative w-full flex flex-col items-center  ">
                 <div className="relative flex items-center justify-center   ">
-                    <img className="h-[95vh] z-11 relative sm:hidden lg:mb-[50px]" src="/img/ForsageSources/phone.png" />
-                    <img className="hidden sm:flex mb-[460px] h-[90vh]  w-11/12 relative" src="/img/ForsageSources/phoneMob.png" />
+                    <img className="h-[95vh] sm: z-11 relative sm:hidden lg:mb-[50px]" src="/img/ForsageSources/phone.png" />
+                    <img className="hidden sm:flex mb-[400px] w-[90vw] relative" src="/img/ForsageSources/phoneMob.png" />
                     <div className="absolute top-[200px] flex flex-col items-center justify-center space-y-4 max-w-[250px] w-full">
                         <div className="button-gradient p-[1px] flex justify-center items-center rounded-[10px] w-full">
                             <button className="cryptoMain-card-bg rounded-[10px] py-2.5 flex items-center justify-center space-x-3 sm:py-3 w-full">
