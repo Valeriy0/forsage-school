@@ -72,19 +72,19 @@ const Index = () => {
       <Points />
       <CryptoMain />
       <NotTraidng />
-      <Earning title='How do you earn at Forsage ?' testContent={testContent1} />
+      <Earning id={1} title='How do you earn at Forsage ?' testContent={testContent1} />
       <InstallWallet />
       <BuyCrypto />
       <Steps />
       <Security />
       <Testi />
-      <Earning title='Is it possible to see all the transactions in Forsage?' testContent={testContent2} />
+      <Earning id={2} title='Is it possible to see all the transactions in Forsage?' testContent={testContent2} />
       <Marketing />
       <XQore />
       <HowBuildBus />
       <InvitePartners />
       <RefferalLinks />
-      <Earning title='What are the income limits in Forsage?' testContent={testContent3} />
+      <Earning id={3} title='What are the income limits in Forsage?' testContent={testContent3} />
       <OnePager />
       <ForsageSources />
     </div>
