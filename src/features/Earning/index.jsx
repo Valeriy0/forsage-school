@@ -27,9 +27,9 @@ export const Earning = ({ id, title, testContent }) => {
             <div className="flex justify-center sm:w-full ">
                 <img className="absolute h-[23vh] -left-5 hidden sm:flex" src={backgroundList?.left} />
                 <span className="text-4xl font-medium sm:text-3xl sm:mt-[30px] sm:font-bold font-montserrat">Let's recap</span>
-                <img className="absolute h-[18vh] -right-5 hidden sm:flex " src={backgroundList?.right} />
+                <img className="absolute h-[18vh] right-0 hidden sm:flex " src={backgroundList?.right} />
             </div>
-            <div className=" flex items-start justify-center w-full sm:w-full ">
+            <div className=" flex items-start justify-center w-full px-4 sm:w-full ">
                 <img className="absolute w-[55vh] z-[-20] top-0 left-0 sm:hidden" src={backgroundList?.left} />
                 <div className=" flex flex-col relative items-center sm:w-full">
                     <div className={`${!!testContent[currentAnswer] ? isCurrentTrue ? 'button-gradient' : 'test-gradient-wrapper-err' : 'button-gradient'}  p-[1px] flex justify-center items-center mt-[50px] relative sm:top-[50px] rounded-[30px]`}>           
