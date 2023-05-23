@@ -66,7 +66,7 @@ export const Earning = ({ id, title, testContent }) => {
                                 })}
                             </div>
                             {currentQuestionList +1 < maxQuestionsList ? (
-                                 <div className={` p-[1px] flex justify-center items-center rounded-[10px] ${currentAnswer ? 'button-gradient' : 'opacity-20'}`}>
+                                 <div className={` p-[1px] flex justify-center items-center rounded-[10px] button-gradient`}>
                                     <button onClick={() => nextList()} className="cryptoMain-card-bg rounded-[10px] px-6 py-1.5 flex items-center justify-center space-x-3 sm:w-full">
                                         <span className="font-montserrat">
                                             Next
