@@ -49,7 +49,7 @@ export const CryptoMain = () => {
         <div className="button-gradient p-[1px] flex justify-center items-center rounded-[10px]">
           <button className="cryptoMain-card-bg rounded-[10px] px-6 py-1.5 flex items-center justify-center space-x-3 sm:w-full">
               <span className="font-montserrat">About</span>
-              <img className="w-[7px]" src="/icons/arrowRIght.svg" />
+              <img className="w-[7px]" src="/icons/arrowRightIcon.svg" />
           </button>
         </div>
       </div>

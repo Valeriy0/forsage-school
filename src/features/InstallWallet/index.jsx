@@ -14,7 +14,7 @@ export const InstallWallet = () => {
                     <img className="w-[200px] h-[200px]" src="/img/wallets/TP.png"/>
                     <button className="flex items-center justify-center space-x-3 border border-[#2980FE] px-6 py-1.5 rounded-[10px]">
                         <span className="font-montserrat">About</span>
-                        <img src="/icons/arrowRight.svg"/>
+                        <img src="/icons/arrowRightIcon.svg"/>
                     </button>         
                 </div>
                 <div className="bg-[#14191B] py-5 px-18 rounded-[25px]  flex flex-col items-center space-y-6">
@@ -22,7 +22,7 @@ export const InstallWallet = () => {
                     <img className="w-[200px] h-[200px]" src="/img/wallets/Metamask.png"/>
                     <button className="flex items-center justify-center space-x-3 border border-[#F6851B] px-6 py-1.5 rounded-[10px]">
                         <span className="font-montserrat">About</span>
-                        <img src="/icons/arrowRight.svg"/>
+                        <img src="/icons/arrowRightIcon.svg"/>
                     </button>         
                 </div>
             </div>

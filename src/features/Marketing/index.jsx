@@ -13,7 +13,7 @@ export const Marketing = () => {
                 <div className="button-gradient p-[1px] flex justify-center items-center rounded-[10px]">
                     <button className="cryptoMain-card-bg rounded-[10px] px-6 py-1.5 flex items-center justify-center space-x-3 sm:w-full sm:py-3">
                         <span className="font-montserrat">See more</span>
-                        <img className="w-[7px]" src="/icons/arrowRIght.svg" />
+                        <img className="w-[7px]" src="/icons/arrowRightIcon.svg" />
                     </button>
                 </div>
             </div>
