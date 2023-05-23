@@ -77,8 +77,8 @@ const Index = () => {
       <BuyCrypto />
       <Steps />
       <Security />
+      <Testi />
       <Earning title='Is it possible to see all the transactions in Forsage?' testContent={testContent2} />
-      {/* <Testi /> */}
       <Marketing />
       <XQore />
       <HowBuildBus />
