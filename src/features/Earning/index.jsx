@@ -1,22 +1,7 @@
 import react, { useState } from "react";
 
 
-export const Earning = () => {
-
-    const testContent = [
-        {
-            title: 'Activate levels in programs and wait for passive income.',
-            isTrue: false,
-        },
-        {
-            title: 'Invite partners to your team and activate levels and programs together.',
-            isTrue: true,
-        },
-        {
-            title: 'Wait for income from your upline partner.',
-            isTrue: false,
-        },
-    ];
+export const Earning = ({ testContent }) => {
 
     const [currentAnswer, setCurrentAnswer] = useState(null);
     const isCurrentTrue = !!testContent[currentAnswer]?.isTrue ? testContent[currentAnswer]?.isTrue : false;

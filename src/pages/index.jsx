@@ -21,6 +21,50 @@ import {
 } from '@/features';
 
 const Index = () => {
+
+  const testContent1 = [
+    {
+        title: 'Activate levels in programs and wait for passive income.',
+        isTrue: false,
+    },
+    {
+        title: 'Invite partners to your team and activate levels and programs together.',
+        isTrue: true,
+    },
+    {
+        title: 'Wait for income from your upline partner.',
+        isTrue: false,
+    },
+  ];
+  const testContent2 = [
+    {
+        title: 'Activate levels in programs and wait for passive income.',
+        isTrue: false,
+    },
+    {
+        title: 'Invite partners to your team and activate levels and programs together.',
+        isTrue: true,
+    },
+    {
+        title: 'Wait for income from your upline partner.',
+        isTrue: false,
+    },
+  ];
+  const testContent3 = [
+    {
+        title: 'Activate levels in programs and wait for passive income.',
+        isTrue: false,
+    },
+    {
+        title: 'Invite partners to your team and activate levels and programs together.',
+        isTrue: true,
+    },
+    {
+        title: 'Wait for income from your upline partner.',
+        isTrue: false,
+    },
+  ];
+
   return (
     <div className="flex flex-col items-center w-screen space-y-[120px] px-4 pb-10 sm:space-y-[60px]">
       <FirstWin />
@@ -28,17 +72,19 @@ const Index = () => {
       <Points />
       <CryptoMain />
       <NotTraidng />
-      <Earning />
+      <Earning testContent={testContent1} />
       <InstallWallet />
       <BuyCrypto />
       <Steps />
       <Security />
-      <Testi />
+      <Earning testContent={testContent2} />
+      {/* <Testi /> */}
       <Marketing />
       <XQore />
       <HowBuildBus />
       <InvitePartners />
       <RefferalLinks />
+      <Earning testContent={testContent3} />
       <OnePager />
       <ForsageSources />
     </div>
