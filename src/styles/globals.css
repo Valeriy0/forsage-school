@@ -95,6 +95,10 @@ html {
   background: linear-gradient(90deg, rgba(42, 245, 152, 1) 20%, rgba(0, 158, 253, 1) 100%);
 }
 
+.test-gradient-wrapper-err {
+  background: linear-gradient(131.29deg, #FF5F55 -17.46%, #B546F9 142.03%);
+}
+
 .border_gold_gradient {
 	border-image: linear-gradient(274.89deg, #FFBA81 -5.31%, #C26748 35.96%, #B2513B 59.62%, #FFBA81 100.51%);;
 	background: linear-gradient(rgba(36, 37, 38, 1), rgba(36, 37, 38, 1)) padding-box,
@@ -109,4 +113,3 @@ html {
 	font-style: normal;
 	font-display: swap;
 }
-
