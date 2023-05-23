@@ -56,10 +56,9 @@ export const BuyCrypto = () => {
                             About
                             </a>
                             </span>
-                        <img className="w-[7px]" src="/icons/arrowRIght.svg" />
+                            <img className="w-[7px]" src="/icons/arrowRightIcon.svg" />
 
-                        <span className="font-montserrat">About</span>
-                        <img className="w-[7px]" src="/icons/arrowRightIcon.svg" />
+                       
 
                     </button>
                 </div>
