@@ -44,8 +44,12 @@ export const Earning = ({ id, title, testContent }) => {
                             <span className="text-2xl font-bold text-center font-montserrat ">{title}</span>
                             <div className="flex flex-col items-start space-y-4 ">
                                 {testContent.map((item, itemIndex) => {
-                                    const isChecked = itemIndex === currentAnswer;
                                     const isTrue = testContent[itemIndex]?.isTrue;
+                                    const isChecked = itemIndex === currentAnswer || testContent[itemIndex]?.isTrue && currentAnswer !== null;
+
+                                    console.log(currentAnswer, testContent[itemIndex])
+
+                                   
                                     return (
                                         <div onClick={() => setCurrentAnswer(itemIndex)} className={`flex items-center justify-center space-x-5 ${isChecked ? isTrue ? 'test-gradient-suc' : 'test-gradient-err' : 'opacity-50'}`}>
                                             <input checked={isChecked} type="radio" id={`input-${title}-${itemIndex}`} className="rounded-full border border-1 border-white p-2" />

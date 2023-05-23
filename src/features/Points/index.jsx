@@ -1,4 +1,5 @@
 import react from "react";
+import { Parallax } from 'react-scroll-parallax';
 
 export const Points = () => {
 
@@ -26,16 +27,19 @@ export const Points = () => {
   ]
 
   return (
+    <Parallax speed={25}>
     <div className="grid grid-cols-2 px-4 sm:grid-cols-1 gap-x-[60px] gap-y-[100px]">
+      
       {info.map((item, itemIndex) => {
         return (
-          <div className="min-h-[200px] w-[400px] sm:w-full relative flex flex-col items-center points-card-bg rounded-[30px]">
-            <img className="z-10 mt-[-60px] h-[120px]" src={item?.icon} alt="" />
-            <img className="absolute top-0 left-1/2 -translate-x-1/2" src={item?.iconBg} alt="" />
-            <span className="p-10 sm:px-5 text-center opacity-50 sm:text-lg">{item?.text}</span>
-          </div>
+            <div className="min-h-[200px] w-[400px] sm:w-full relative flex flex-col items-center points-card-bg rounded-[30px]">
+              <img className="z-10 mt-[-60px] h-[120px]" src={item?.icon} alt="" />
+              <img className="absolute top-0 left-1/2 -translate-x-1/2" src={item?.iconBg} alt="" />
+              <span className="p-10 sm:px-5 text-center opacity-50 sm:text-lg">{item?.text}</span>
+            </div>
         )
       })}
     </div>
+    </Parallax>
   )
 }
