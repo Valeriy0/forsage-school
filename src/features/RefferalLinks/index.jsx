@@ -5,14 +5,17 @@ export const RefferalLinks = () => {
     {
       text: 'Your link is on the dashboard, in the upper right corner. You can share the link by copying it.',
       icon: '/img/refferalLinks/1.png',
+      border: 'refferal-gradient-1',
     },
     {
       text: `Once new partners are registered, the team's performance data is uploaded to your dashboard.`,
       icon: '/img/refferalLinks/2.png',
+      border: 'refferal-gradient-2',
     },
     {
       text: 'A referral link allows you to join forces with your team members to increase profits and distribute them evenly among the partners.',
       icon: '/img/refferalLinks/3.png',
+      border: 'refferal-gradient-3',
     },
   ]
   return (
@@ -24,9 +27,11 @@ export const RefferalLinks = () => {
       <div className="flex justify-between w-full space-x-[30px] sm:flex-col sm:space-x-0 sm:text-center sm:items-center ">
         {info?.map((item, itemIndex) => {
           return (
-            <div className="overflow-hidden rounded-[30px] w-[370px] sm:w-full h-[470px] relative p-10 flex flex-col " key={itemIndex}>
-              <span>{item?.text}</span> 
-              <img className="absolute bottom-0 right-0 sm:w-full" src={item?.icon} alt="" />
+            <div className={`p-[1px] rounded-[30px] ${item?.border}`} key={itemIndex}>            
+              <div className="overflow-hidden cryptoMain-card-bg rounded-[30px] w-[370px] sm:w-full h-[470px] relative p-10 flex flex-col " >
+                <span>{item?.text}</span> 
+                <img className="absolute bottom-0 right-0 sm:w-full" src={item?.icon} alt="" />
+              </div>
             </div>
           )
         })}
