@@ -72,13 +72,17 @@ export const ForsageSources = () => {
                 <div className="relative flex items-center justify-center   ">
                     <img className="h-[95vh] z-11 relative sm:hidden" src="/img/ForsageSources/phone.png" />
                     <img className="hidden sm:flex mb-[500px] h-[70vh] w-11/12 relative" src="/img/ForsageSources/phoneMob.png" />
-                    <div className="absolute top-[200px] flex flex-col items-center justify-center space-y-4">
-                        <button className="border border-white rounded-[10px] px-16 py-2.5 flex items-center justify-center space-x-3 sm:w-full sm:py-3 w-full">
-                            <span className="text-xl text-white font-bold font-montserrat">forsage.io</span>
-                        </button>
-                        <button className="border border-white rounded-[10px] px-17 py-2.5 flex items-center justify-center space-x-3 sm:w-full sm:py-3 w-full  ">
-                            <span className="text-xl text-white font-bold font-montserrat">busd.forsage.io</span>
-                        </button>
+                    <div className="absolute top-[200px] flex flex-col items-center justify-center space-y-4 max-w-[250px] w-full">
+                        <div className="button-gradient p-[1px] flex justify-center items-center rounded-[10px] w-full">
+                            <button className="cryptoMain-card-bg rounded-[10px] py-2.5 flex items-center justify-center space-x-3 sm:py-3 w-full">
+                                <span className="text-xl text-white font-bold font-montserrat">forsage.io</span>
+                            </button>
+                        </div>
+                        <div className="button-gradient p-[1px] flex justify-center items-center rounded-[10px] w-full">
+                            <button className="cryptoMain-card-bg rounded-[10px] py-2.5 flex items-center justify-center space-x-3 sm:py-3 w-full">
+                                <span className="text-xl text-white font-bold font-montserrat">busd.forsage.io</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <div className="absolute w-full backdrop-blur-3xl  bottom-0 rounded-[30px] flex justify-evenly pt-[80px] sm:flex-col sm:items-center sm:justify-center pb-8 ">

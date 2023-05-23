@@ -22,7 +22,7 @@ import {
 
 const Index = () => {
   return (
-    <div className="flex flex-col items-center w-screen space-y-[120px] px-4 sm:space-y-[60px]">
+    <div className="flex flex-col items-center w-screen space-y-[120px] px-4 pb-10 sm:space-y-[60px]">
       <FirstWin />
       <Second />
       <Points />

@@ -44,9 +44,11 @@ export const SeedPhrase = ({firstTitle, secondTitle, title, img, desc, desc2}) =
                         <input type="checkbox"></input>
                         <span className="font-light">I understand</span>
                     </div>
-                    <button className="border border-1  rounded-[10px] px-6 py-1.5 flex items-center justify-center space-x-3 sm:w-full">
-                        <span className="font-montserrat">Next</span>
-                    </button>
+                    <div className="button-gradient p-[1px] flex justify-center items-center rounded-[10px] ">
+                        <button className="bg-[#131314] rounded-[10px] px-6 py-1.5 flex items-center justify-center space-x-3 sm:w-full">
+                            <span className="font-montserrat">Next</span>
+                        </button>
+                    </div>
                 </div>
             </div>
             <img className="h-[50vh]" src={img} />

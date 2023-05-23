@@ -80,20 +80,22 @@ export const NotTraidng = () => {
                     })}
                     </div>
                 </div>
-                <div className="bg-[#131314] border border-1 boder-green h-full w-full rounded-[20px] flex flex-col ">
-                    <span className="text-2xl mt-[15px] text-center text-gradient font-montserrat">Forsage</span>
-                    <div className="my-[40px] space-y-6">
-                    {forsage.map((item, itemIndex) => {
-                        return (
-                        <div className={`pl-[50px] flex space-x-[18px] pr-[10px] ${item.className}`}>
-                            <img className="w-[12px]" src={item.img} />
-                            <span className="text-[13px]">{item?.title}</span>
+                    <div className="button-gradient p-[1px] flex justify-center items-center rounded-[20px] h-full w-full">
+                        <div className="bg-[#131314] border h-full w-full rounded-[20px] flex flex-col">
+                            <span className="text-2xl mt-[15px] text-center text-gradient font-montserrat">Forsage</span>
+                            <div className="my-[40px] space-y-6">
+                            {forsage.map((item, itemIndex) => {
+                                return (
+                                <div className={`pl-[50px] flex space-x-[18px] pr-[10px] ${item.className}`}>
+                                    <img className="w-[12px]" src={item.img} />
+                                    <span className="text-[13px]">{item?.title}</span>
+                                </div>
+                                )
+                            })}
+                            </div>
                         </div>
-                        )
-                    })}
                     </div>
                 </div>
-            </div>
    </div>
   )
 }

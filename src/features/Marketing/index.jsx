@@ -10,10 +10,12 @@ export const Marketing = () => {
                 Income is distributed automatically and instantly to participants' personal wallets.
                 Your maximum income depends only on your activity.
                 </span>
-                <button className="border border-white rounded-[10px] px-6 py-1.5 flex items-center justify-center space-x-3 sm:w-full sm:py-3">
-                    <span className="font-montserrat">See more</span>
-                    <img className="w-[7px]" src="/icons/arrowRIght.svg" />
-                </button>
+                <div className="button-gradient p-[1px] flex justify-center items-center rounded-[10px]">
+                    <button className="cryptoMain-card-bg rounded-[10px] px-6 py-1.5 flex items-center justify-center space-x-3 sm:w-full sm:py-3">
+                        <span className="font-montserrat">See more</span>
+                        <img className="w-[7px]" src="/icons/arrowRIght.svg" />
+                    </button>
+                </div>
             </div>
             <div className=" flex items-center justify-center sm:mt-[50px]">
                 <img className="w-[120vh] absolute" src="/img/shadow/traidingSahdow.png"/>

@@ -30,12 +30,16 @@ export const OnePager = () => {
         </div>
       </div>
       <div className="flex space-x-9 pt-[70px] sm:hidden">
-        <button className="border border-white rounded-[10px] px-6 py-1.5 flex items-center justify-center space-x-3 sm:w-full sm:py-3">
-          <span className="font-montserrat">Download Color</span>
-        </button>
-        <button className="border border-white rounded-[10px] px-6 py-1.5 flex items-center justify-center space-x-3 sm:w-full sm:py-3">
-          <span className="font-montserrat">Download BW</span>
-        </button>
+        <div className="button-gradient p-[1px] flex justify-center items-center rounded-[10px]">
+          <button className="cryptoMain-card-bg rounded-[10px] px-6 py-1.5 flex items-center justify-center space-x-3 sm:w-full sm:py-3">
+            <span className="font-montserrat">Download Color</span>
+          </button>
+        </div>
+        <div className="button-gradient p-[1px] flex justify-center items-center rounded-[10px]">
+          <button className="cryptoMain-card-bg rounded-[10px] px-6 py-1.5 flex items-center justify-center space-x-3 sm:w-full sm:py-3">
+            <span className="font-montserrat">Download BW</span>
+          </button>
+        </div>
       </div>
     </div> 
   )

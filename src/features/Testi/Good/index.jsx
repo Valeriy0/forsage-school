@@ -64,9 +64,12 @@ export const Good = () => {
                     </div>
                 ))}
             </div>
-            <button className="border border-1 rounded-[10px] px-8 py-2.5 flex items-center justify-center space-x-3 sm:w-full">
-                <span className="font-montserrat">Next</span>
-            </button>
+            <div className="button-gradient p-[1px] flex justify-center items-center rounded-[10px] ">
+                <button className="bg-[#131314] rounded-[10px] px-8 py-2.5 flex items-center justify-center space-x-3 sm:w-full">
+                    <span className="font-montserrat">Next</span>
+                </button>
+            </div>
+           
         </div>
 
 
@@ -85,9 +88,11 @@ export const Good = () => {
                     </div>
                 ))}
             </div>
-            <button className="border border-1 rounded-[10px] px-8 py-2.5 flex items-center justify-center space-x-3 sm:w-full">
-                <span className="font-montserrat">Done</span>
-            </button>
+            <div className="button-gradient p-[1px] flex justify-center items-center rounded-[10px] ">
+                <button className="bg-[#131314] rounded-[10px] px-8 py-2.5 flex items-center justify-center space-x-3 sm:w-full">
+                    <span className="font-montserrat">Done</span>
+                </button>
+            </div>
         </div>
         </>
     )
