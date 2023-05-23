@@ -19,7 +19,7 @@ export const HowBuildBus = () => {
     },
   ]
   return (
-    <div className="relative flex flex-col max-w-[1170px] w-full space-y-[100px]">
+    <div className="relative flex flex-col max-w-[1170px] w-full space-y-[100px] px-4">
       <img className="absolute top-0 right-0 max-w-[45%] w-full sm:hidden" src="/img/howBuildBus/circle.png" alt="" />
       <div className="flex flex-col space-y-10 max-w-[600px] sm:text-center">
         <span className="text-4xl font-semibold font-montserrat">How to build a business with Forsage?</span>
@@ -28,7 +28,7 @@ export const HowBuildBus = () => {
           <span>Forsage School courses, Forsage support, and your Leader will help you with each of these steps!</span>
         </div>
       </div>
-      <div className="flex w-full justify-between sm:flex-col sm:w-full sm:space-y-7">
+      <div className="flex w-full justify-between sm:flex-col sm:w-full sm:space-y-12">
         {info.map((item, itemIndex) => {
           return (
             <div className={`overflow-hidden max-w-[280px] h-[330px] w-full flex flex-col ${item?.styleWrap} rounded-[30px] sm:w-full sm:max-w-full sm: h-full`} key={itemIndex}>

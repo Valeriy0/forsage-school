@@ -63,8 +63,8 @@ export const ForsageSources = () => {
         <div className="mt-[20px] flex flex-col items-center justify-center space-y-[120px] relative w-full p-[50px] sm:p-0 sm:p-4">
 
             <img className="absolute w-full bottom-0 z-[-20]" src="/img/ForsageSources/bg.png"/>
-            <span className="text-5xl font-bold sm:text-4xl w-full text-center font-montserrat">All official sources of FORSAGE</span>
-            <div className="relative w-full flex flex-col items-center  ">
+            <span className="sm:px-4 text-5xl font-bold sm:text-4xl w-full text-center font-montserrat">All official sources of FORSAGE</span>
+            <div className="sm:px-4 relative w-full flex flex-col items-center  ">
                 <div className="relative flex items-center justify-center   ">
                     <img className="h-[95vh] z-11 relative sm:hidden lg:mb-[50px]" src="/img/ForsageSources/phone.png" />
                     <img className="hidden sm:flex mb-[460px] h-[90vh]  w-11/12 relative" src="/img/ForsageSources/phoneMob.png" />

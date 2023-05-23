@@ -2,13 +2,12 @@ import React from "react";
 
 export const BuyCrypto = () => {
     return (
-        <div className="mt-[200px] flex flex-col items-center space-y-20 w-full sm:space-y-10 relative">
-            <span className="text-5xl text-center sm:text-4xl font-bold font-montserrat">
+        <div className="mt-[200px] sm:mt-[100px] flex flex-col items-center space-y-20 w-full sm:space-y-10 relative">
+            <span className="text-5xl text-center sm:text-4xl font-bold font-montserrat sm:px-4">
             How to buy cryptocurrency. <br />
             A step by step instruction
             </span>
-            <div className="w-full space-y-[200px] sm:space-y-12 relative flex flex-col items-center justify-start ">
-           
+            <div className="w-full space-y-[200px] sm:space-y-12 relative flex flex-col items-center justify-start sm:px-4">
                 <div className=" flex items-center justify-around w-full">
                     <img className="w-[400px] absolute left-0 z-[-1]" src="/img/buyCrypto/BinanceBg.png" />
                     <img className="w-[400px] sm:hidden" src="/img/buyCrypto/Binance.png"/>

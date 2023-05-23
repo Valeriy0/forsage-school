@@ -24,7 +24,7 @@ export const CryptoMain = () => {
   ]
 
   return (
-    <div className="flex flex-col w-full items-center justify-center" style={wrapperStyle}>
+    <div className="flex flex-col w-full items-center justify-center px-4" style={wrapperStyle}>
       <div className="flex justify-center items-center w-full max-w-[1021px] sm:max-w-full sm:flex-col space-x-[181px] sm:space-x-0 sm:space-y-[60px] h-[586px] sm:h-auto sm:pb-[60px]">
         <img className="w-[240px] sm:h-[150px] sm:w-[150px]" src="/img/cryptoMain/logo.png" alt="" />
         <span className="text-6xl sm:text-4xl sm:text-center sm:font-semibold text-gradient font-montserrat">Cryptocurrency <br/> is the money of <br/> tomorrow</span>

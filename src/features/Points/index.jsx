@@ -26,7 +26,7 @@ export const Points = () => {
   ]
 
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-1 gap-x-[60px] gap-y-[100px]">
+    <div className="grid grid-cols-2 px-4 sm:grid-cols-1 gap-x-[60px] gap-y-[100px]">
       {info.map((item, itemIndex) => {
         return (
           <div className="min-h-[200px] w-[400px] sm:w-full relative flex flex-col items-center points-card-bg rounded-[30px]">

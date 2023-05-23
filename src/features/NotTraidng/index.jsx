@@ -60,7 +60,7 @@ export const NotTraidng = () => {
     ]
 
   return (
-   <div className="py-[150px] flex flex-col items-center justify-center space-y-[70px] sm:py-[20px]  sm:w-full relative ">
+   <div className="py-[150px] px-4 flex flex-col items-center justify-center space-y-[70px] sm:py-[20px]  sm:w-full relative ">
         <div className="flex flex-col items-center justify-center space-y-[30px]  sm:w-full">
             <span className="text-5xl font-bold font-montserrat text-center sm:text-3xl font-montserrat">Forsage is not <br className="hidden sm:flex" /> trading</span>
             <span className="text-xl opacity-50 text-center sm:text-base">Forsage is a network-type business with a clear <br className="hidden sm:flex" /> and transparent economic model that has been <br /> successfully operating for 3 years.</span>

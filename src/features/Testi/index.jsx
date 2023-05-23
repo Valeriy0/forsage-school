@@ -71,7 +71,7 @@ export const Testi = () => {
     }, [currentSlide, slidesData])
 
     return (
-        <div className="space-y-5">
+        <div className="space-y-5 px-4">
             {renderContent} 
         </div>   
     )

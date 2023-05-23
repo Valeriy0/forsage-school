@@ -7,7 +7,7 @@ export const InvitePartners = () => {
    'Share the opportunity to join your Forsage team by using hashtags and your personal referral link.'
   ]
   return (
-    <div className="relative flex flex-col items-center w-full pb-[100px]">
+    <div className="relative flex flex-col items-center w-full pb-[100px] px-4">
       <img className="absolute left-0 top-0 sm:hidden" src="/img/invitePartners/left.png" alt="" />
       <img className="absolute right-0 bottom-0 sm:hidden" src="/img/invitePartners/right.png" alt="" />
       <div className="max-w-[866px] w-full flex flex-col items-center">
