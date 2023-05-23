@@ -1,6 +1,6 @@
 import React from "react";
 
-export const SeedPhrase = ({firstTitle, secondTitle, title, img, desc, desc2}) => {
+export const FirstBlock = ({firstTitle, secondTitle, title, img, desc, desc2}) => {
     const phrase = [
         {
             title: {desc},
