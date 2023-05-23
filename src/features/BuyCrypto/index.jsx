@@ -11,7 +11,7 @@ export const BuyCrypto = () => {
            
                 <div className=" flex items-center justify-around w-full">
                     <img className="w-[400px] absolute left-0 z-[-1]" src="/img/buyCrypto/BinanceBg.png" />
-                    <img className="w-[400px] sm:hidden" src="/img/buyCrypto/binance.png"/>
+                    <img className="w-[400px] sm:hidden" src="/img/buyCrypto/Binance.png"/>
                     <div className="flex flex-col items-start bg-[#14191B] p-8 space-y-8 rounded-[30px] sm:items-center">
                         <span className="text-3xl sm:text-center sm:w-full font-montserrat ">Binance Exchange</span>
                         <span className="opacity-50 sm:text-center">The world's largest exchange in terms of daily trading <br className="sm:hidden"/> volume. It offers 600+ cryptocurrencies for buying, selling<br/> and trading.</span>
