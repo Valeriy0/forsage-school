@@ -2,7 +2,7 @@ import React from "react";
 
 export const BuyCrypto = () => {
     return (
-        <div className="mt-[200px] sm:mt-[100px] flex flex-col items-center space-y-20 w-full sm:space-y-10 relative">
+        <div className="mt-[200px] sm:mt-[100px] mb-[200px] sm:mb-[50px] flex flex-col items-center space-y-20 w-full sm:space-y-10 relative">
             <span className="text-5xl text-center sm:text-4xl font-bold font-montserrat sm:px-4">
             How to buy cryptocurrency. <br />
             A step by step instruction

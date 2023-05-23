@@ -88,7 +88,7 @@ export const NotTraidng = () => {
                                 return (
                                 <div className={`pl-[50px] flex space-x-[18px] pr-[10px] ${item.className}`}>
                                     <img className="w-[12px]" src={item.img} />
-                                    <span className="text-[13px]">{item?.title}</span>
+                                    <span className={`text-[13px] ${itemIndex !== 1 && itemIndex !== 4 && 'text-gradient'} `}>{item?.title}</span>
                                 </div>
                                 )
                             })}

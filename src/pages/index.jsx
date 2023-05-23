@@ -190,13 +190,13 @@ const Index = () => {
       <CryptoMain />
       <NotTraidng />
       <Earning id={1} title='How do you earn at Forsage ?' testContent={testContent1} />
+      <Security />
+      <Testi />
       <div className="px-4 sm:px-0 flex flex-col w-full">
         <InstallWallet />
         <BuyCrypto />
       </div>
-      <Steps />
-      <Security />
-      <Testi />
+      {/* <Steps /> */}
       <Earning id={2} title='Is it possible to see all the transactions in Forsage?' testContent={testContent2} />
       <Marketing />
       <XQore />
