@@ -66,15 +66,17 @@ const Index = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center w-screen space-y-[120px] px-4 pb-10 sm:space-y-[60px]">
+    <div className="flex flex-col items-center w-screen space-y-[120px] pb-10 sm:space-y-[60px]">
       <FirstWin />
       <Second />
       <Points />
       <CryptoMain />
       <NotTraidng />
       <Earning id={1} title='How do you earn at Forsage ?' testContent={testContent1} />
-      <InstallWallet />
-      <BuyCrypto />
+      <div className="px-4 flex flex-col w-full">
+        <InstallWallet />
+        <BuyCrypto />
+      </div>
       <Steps />
       <Security />
       <Testi />
@@ -85,8 +87,10 @@ const Index = () => {
       <InvitePartners />
       <RefferalLinks />
       <Earning id={3} title='What are the income limits in Forsage?' testContent={testContent3} />
-      <OnePager />
-      <ForsageSources />
+      <div className="px-4 flex flex-col w-full">
+        <OnePager />
+        <ForsageSources />
+      </div>
     </div>
   )
 }
