@@ -1,14 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 
 export const SecondTest = ({}) => {
-    
-    const secondAnswer = [
+    const [currentAnswer, setCurrentAnswer] = useState(null);
+    const answers = [
         {
             title: [
                 <span>
                   When it is impossible to perform a transfer to a third party,<br /> you should give them access so that they can perform the<br />  operation themselves.
                 </span>
             ],
+            isTrue: false,
         },
         {
             title: [
@@ -16,6 +17,7 @@ export const SecondTest = ({}) => {
                   When the Forsage administrators require access to <br /> perform a transaction for rewards.
                 </span>
             ],
+            isTrue: false,
         },
         {
             title: [
@@ -23,6 +25,7 @@ export const SecondTest = ({}) => {
                  There is no such situation. Data for accessing the wallet is <br/> stored only with you.
                 </span>
             ],
+            isTrue: true,
         },
         {
             title: [
@@ -30,6 +33,7 @@ export const SecondTest = ({}) => {
                   In an emergency situation, for example, to help in an<br/> accident
                 </span>
             ],
+            isTrue: false,
         },
     ]
     return(       
@@ -40,12 +44,17 @@ export const SecondTest = ({}) => {
             </div>
             <span className="text-3xl font-montserrat font-bold sm:text-center sm:text-xl">In what situation can you share data <br className="sm:hidden"/> to access your wallet?</span>
             <div className=" flex flex-col justify-start text-left space-y-7 w-full max-w-[575px]">
-                {secondAnswer.map((item, itemIndex) => (
-                    <div className="flex space-x-6">
-                    <input type="checkbox"></input>
-                    <span className="opacity-50 font-light">{item.title}</span>
+            {answers.map((item, itemIndex) => {
+                const isTrue = answers[itemIndex]?.isTrue;
+                const isChecked = itemIndex === currentAnswer || answers[itemIndex]?.isTrue && currentAnswer !== null;
+                                   
+                return (
+                    <div onClick={() => setCurrentAnswer(itemIndex)} className={`flex items-center justify-start space-x-5 ${isChecked ? isTrue ? 'test-gradient-suc' : 'test-gradient-err' : 'opacity-50'}`}>
+                        <input checked={isChecked} type="radio" id={`input-securityTest-${itemIndex}`} className="rounded-full border border-1 border-white p-2" />
+                        <label for={`input-securityTest-${itemIndex}`}>{item?.title}</label>
                     </div>
-                ))}
+                    )
+                })}
             </div>
             <div className="button-gradient  p-[1px] flex justify-center items-center rounded-[10px] ">
                 <button  className="bg-[#131314] rounded-[10px] px-8 py-2.5 flex items-center justify-center space-x-3 sm:w-full">
