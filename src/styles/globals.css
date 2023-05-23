@@ -71,6 +71,22 @@ html {
   -webkit-box-decoration-break: clone;
 }
 
+.test-gradient-suc {
+  background: linear-gradient(95.44deg, #2AF598 16.46%, #009EFD 102.61%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+}
+
+.test-gradient-err {
+  background: linear-gradient(131.29deg, #FF5F55 -17.46%, #B546F9 142.03%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+}
+
 .cryptoMain-gradient {
   background: linear-gradient(180deg, #2af59ad0 20%, #009dff04 100%);
 }

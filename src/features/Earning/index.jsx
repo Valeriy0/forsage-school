@@ -1,6 +1,24 @@
-import react from "react";
+import react, { useState } from "react";
+
 
 export const Earning = () => {
+
+    const [currentAnswer, setCurrentAnswer] = useState();
+
+    const testContent = [
+        {
+            title: 'Activate levels in programs and wait for passive income.',
+            isTrue: false,
+        },
+        {
+            title: 'Invite partners to your team and activate levels and programs together.',
+            isTrue: true,
+        },
+        {
+            title: 'Wait for income from your upline partner.',
+            isTrue: false,
+        },
+    ]
 
   return (
         <div className="flex flex-col items-center space-y-14 pt-[50px] w-full sm:space-y-0 sm:w-full">
@@ -16,23 +34,23 @@ export const Earning = () => {
                         <div className="bg-[#14191B] rounded-[30px] py-11 px-[50px] flex flex-col items-center space-y-7  sm:px-5 sm:py-5 sm:w-full">
                             
                             <div className="w-[100px] h-[100px] rounded-full absolute top-[-65px] button-gradient p-[1px] flex justify-center items-center">
-                                <div className="w-full h-full bg-[#14191B] rounded-full"></div>
+                                <div className="flex items-center justify-center w-full h-full bg-[#14191B] rounded-full">
+                                    {testContent[currentAnswer]?.isTrue ? 1 : 0}
+                                </div>
                             </div>
 
                             <span className="text-2xl font-bold text-center font-montserrat ">How do you earn at FORSAGE?</span>
-                            <div className="flex flex-col items-start space-y-4 opacity-50">
-                                <div className="flex items-center justify-center space-x-5">
-                                    <div className="rounded-full border border-1 border-white p-2 "></div>
-                                    <span>Activate levels in programs and wait for passive income.</span>
-                                </div>
-                                <div className="flex items-center justify-center space-x-5">
-                                    <div className="rounded-full border border-1 border-white p-2 "></div>
-                                    <span>Invite partners to your team and activate levels and <br/> programs together.</span>
-                                </div>
-                                <div className="flex items-center justify-center space-x-5">
-                                    <div className="rounded-full border border-1 border-white p-2 "></div>
-                                    <span>Wait for income from your upline partner.</span>
-                                </div>
+                            <div className="flex flex-col items-start space-y-4 ">
+                                {testContent.map((item, itemIndex) => {
+                                    const isChecked = itemIndex === currentAnswer;
+                                    const isTrue = testContent[itemIndex]?.isTrue;
+                                    return (
+                                        <div onClick={() => setCurrentAnswer(itemIndex)} className={`flex items-center justify-center space-x-5 ${isChecked ? isTrue ? 'test-gradient-suc' : 'test-gradient-err' : 'opacity-50'}`}>
+                                            <input checked={isChecked} type="radio" id={`input-${itemIndex}`} className="rounded-full border border-1 border-white p-2" />
+                                            <label for={`input-${itemIndex}`}>Activate levels in programs and wait for passive income.</label>
+                                        </div>
+                                    )
+                                })}
                             </div>
                         </div>
                     </div>
