@@ -21,7 +21,7 @@ export const FirstBlock = ({currentSlide,  nextSlide, prevSlide,  firstTitle, se
     ];
 
     return (
-        <div id={currentSlide} className="bg-[#14191B] rounded-[20px] px-[100px] py-[50px] flex items-center justify-between min-h-[700px] h-full w-full min-w-[1200px] sm:min-h-full sm:px-0 sm:flex-col sm:space-y-9 sm:min-w-full">
+        <div id={currentSlide} className="bg-[#14191B] rounded-[20px] px-[100px] py-[50px] flex items-center justify-between min-h-[700px] h-full w-full min-w-[1300px] sm:min-h-full sm:px-0 sm:flex-col sm:space-y-9 sm:min-w-full">
             <div className="space-y-[40px] flex flex-col justify-between items-start sm:items-center ">
                 <span className="text-5xl font-montserrat font-bold sm:text-3xl ">{title}</span>
                 <div className=" flex flex-col space-y-[35px] opacity-50 font-light sm:text-center">
