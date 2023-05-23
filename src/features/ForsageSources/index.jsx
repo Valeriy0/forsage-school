@@ -60,15 +60,14 @@ export const ForsageSources = () => {
         },
     ]
     return(
-        <div className="mt-[20px] flex flex-col items-center justify-center space-y-[120px] relative w-full p-[50px] sm:p-0 sm:p-4">
-
+        <div className="mt-[150px] flex flex-col items-center justify-center space-y-[120px] relative w-full p-[50px] sm:p-0 sm:p-4 sm:space-y-[50px] sm:mt-[30px]">
             <img className="absolute w-full bottom-0 z-[-20]" src="/img/ForsageSources/bg.png"/>
-            <span className="sm:px-4 text-5xl font-bold sm:text-4xl w-full text-center font-montserrat">All official sources of FORSAGE</span>
+            <span className="sm:px-4 text-5xl font-bold sm:text-3xl w-full text-center font-montserrat">All official sources <br className="hidden sm:flex" />of FORSAGE</span>
             <div className="sm:px-4 relative w-full flex flex-col items-center  ">
                 <div className="relative flex items-center justify-center   ">
-                    <img className="h-[95vh] sm: z-11 relative sm:hidden lg:mb-[50px]" src="/img/ForsageSources/phone.png" />
-                    <img className="hidden sm:flex mb-[400px] w-[90vw] relative" src="/img/ForsageSources/phoneMob.png" />
-                    <div className="absolute top-[200px] flex flex-col items-center justify-center space-y-4 max-w-[250px] w-full">
+                    <img className="sm:hidden relative      h-full max-h-[750px] z-11" src="/img/ForsageSources/phone.png" />
+                    <img className=" hidden sm:flex relative h-full min-h-[600px] max-h-[600px] mb-[410px] relative" src="/img/ForsageSources/phoneMob.png" />
+                    <div className="absolute top-[200px] flex flex-col items-center justify-center space-y-4 max-w-[250px] w-full sm:max-w-[180px]">
                         <div className="button-gradient p-[1px] flex justify-center items-center rounded-[10px] w-full">
                             <button className="cryptoMain-card-bg rounded-[10px] py-2.5 flex items-center justify-center space-x-3 sm:py-3 w-full">
                                 <span className="text-xl text-white font-bold font-montserrat">
@@ -76,13 +75,18 @@ export const ForsageSources = () => {
                                     </span>
                             </button>
                         </div>
-                        <div className="button-gradient p-[1px] flex justify-center items-center rounded-[10px] w-full">
-                            <button className="cryptoMain-card-bg rounded-[10px] py-2.5 flex items-center justify-center space-x-3 sm:py-3 w-full">
+                        <div className="button-gradient p-[1px] flex justify-center items-center rounded-[10px] w-full ">
+                            <button className="cryptoMain-card-bg rounded-[10px] py-2.5 flex items-center justify-center space-x-3 sm:py-3 w-full ">
                                 <span className="text-xl text-white font-bold font-montserrat">  <a href="https://busd.forsage.io/" target="_blank">busd.forsage.io</a></span>
                             </button>
                         </div>
                     </div>
                 </div>
+
+
+
+
+
                 <div className="absolute w-full backdrop-blur-3xl  bottom-0 rounded-[30px] flex justify-evenly pt-[80px] sm:flex-col sm:items-center sm:justify-center pb-8 sm:space-y-5 ">
                 <div className="flex flex-col space-y-3 sm:items-center sm:justify-center ">
                         <span className="text-2xl font-montserrat">Help</span>
