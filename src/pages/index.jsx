@@ -197,13 +197,13 @@ const Index = () => {
       <Steps />
       <Security />
       <Testi />
-      {/* <Earning id={2} title='Is it possible to see all the transactions in Forsage?' testContent={testContent2} /> */}
+      <Earning id={2} title='Is it possible to see all the transactions in Forsage?' testContent={testContent2} />
       <Marketing />
       <XQore />
       <HowBuildBus />
       <InvitePartners />
       <RefferalLinks />
-      {/* <Earning id={3} title='What are the income limits in Forsage?' testContent={testContent3} /> */}
+      <Earning id={3} title='What are the income limits in Forsage?' testContent={testContent3} />
       <div className="px-4 sm:px-0 flex flex-col w-full">
         <OnePager />
         <ForsageSources />
