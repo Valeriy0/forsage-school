@@ -21,7 +21,7 @@ export const FirstBlock = ({currentSlide,  nextSlide, prevSlide,  firstTitle, se
     ];
 
     return (
-        <div id={currentSlide} className="bg-[#14191B] rounded-[20px] px-[100px] py-[50px] flex items-center justify-between min-h-[700px] h-full sm:min-h-full sm:px-0 sm:flex-col sm:space-y-9">
+        <div id={currentSlide} className="bg-[#14191B] rounded-[20px] px-[100px] py-[50px] flex items-center justify-between min-h-[700px] h-full w-full min-w-[1200px] sm:min-h-full sm:px-0 sm:flex-col sm:space-y-9 sm:min-w-full">
             <div className="space-y-[40px] flex flex-col justify-between items-start sm:items-center ">
                 <span className="text-5xl font-montserrat font-bold sm:text-3xl ">{title}</span>
                 <div className=" flex flex-col space-y-[35px] opacity-50 font-light sm:text-center">
@@ -37,7 +37,7 @@ export const FirstBlock = ({currentSlide,  nextSlide, prevSlide,  firstTitle, se
                      {phrase.map((item, itemIndex) => (
                         <div className="flex items-center space-x-3">
                             {/* <div className="bg-[#2AF598] rounded-full h-[10px] w-[10px]"></div> */}
-                            <span className="text-center">{desc}</span>
+                            <span className="sm:text-center">{desc}</span>
                         </div>
                         ))}
                     </div>

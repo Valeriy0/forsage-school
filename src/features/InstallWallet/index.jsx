@@ -13,7 +13,11 @@ export const InstallWallet = () => {
                     <span className="text-center font-montserrat text-xl">Installing <span className="text-[#2980FE]"> TokenPoket </span> <br /> Wallet</span>
                     <img className="w-[200px] h-[200px]" src="/img/wallets/TP.png"/>
                     <button className="flex items-center justify-center space-x-3 border border-[#2980FE] px-6 py-1.5 rounded-[10px]">
-                        <span className="font-montserrat">About</span>
+                        <span className="font-montserrat">
+                            <a href="https://support.forsage.io/article/wallet/tokenpocket-setup" target="_blank">
+                                About
+                            </a>
+                            </span>
                         <img src="/icons/arrowRight.svg"/>
                     </button>         
                 </div>
@@ -21,7 +25,10 @@ export const InstallWallet = () => {
                     <span className="text-center font-montserrat text-xl">Installing <span className="text-[#F6851B]"> MetaMask </span> <br /> Wallet</span>
                     <img className="w-[200px] h-[200px]" src="/img/wallets/Metamask.png"/>
                     <button className="flex items-center justify-center space-x-3 border border-[#F6851B] px-6 py-1.5 rounded-[10px]">
-                        <span className="font-montserrat">About</span>
+                        <span className="font-montserrat">
+                            <a href="https://support.forsage.io/article/wallet/metamask-desktop-setup" target="_blank">
+                                About
+                            </a></span>
                         <img src="/icons/arrowRight.svg"/>
                     </button>         
                 </div>

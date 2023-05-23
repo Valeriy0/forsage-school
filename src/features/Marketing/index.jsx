@@ -2,7 +2,7 @@ import React from "react";
 
 export const Marketing = () => {
     return (
-        <div className="flex items-center mt-[150px] sm:flex-col">
+        <div className="flex items-center mt-[150px] sm:flex-col sm:pt-[100px]">
             <div className="space-y-8 flex flex-col items-start sm:text-center">
                 <span className="text-5xl sm:w-full font-montserrat">Marketing</span>
                 <span className="w-[360px] opacity-50">
@@ -10,7 +10,7 @@ export const Marketing = () => {
                 Income is distributed automatically and instantly to participants' personal wallets.
                 Your maximum income depends only on your activity.
                 </span>
-                <div className="button-gradient p-[1px] flex justify-center items-center rounded-[10px]">
+                <div className="button-gradient p-[1px] flex justify-center items-center rounded-[10px] sm:w-full">
                     <button className="cryptoMain-card-bg rounded-[10px] px-6 py-1.5 flex items-center justify-center space-x-3 sm:w-full sm:py-3">
                         <span className="font-montserrat">See more</span>
                         <img className="w-[7px]" src="/icons/arrowRIght.svg" />

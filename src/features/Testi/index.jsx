@@ -1,7 +1,7 @@
 import React, { useState, useMemo } from "react";
 import { FirstBlock } from "./firsBlock";
-import { Good } from "./Good";
-
+import { FirstTest } from "./firstTest";
+import { SecondTest } from "./secondTest";
 export const Testi = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -43,11 +43,18 @@ export const Testi = () => {
     const nextSlide = () => setCurrentSlide(currentSlide + 1);
     const prevSlide = () => currentSlide !== 0 ? setCurrentSlide(currentSlide - 1) : null;
 
-
     const renderContent = useMemo(() => {
         switch (currentSlide) {
             case 4: {
-                return <Good />;
+                return <FirstTest 
+                currentSlide={currentSlide}
+                nextSlide={() => nextSlide()}
+                prevSlide={() => prevSlide()}
+                />
+            }
+            case 5: {
+                return < SecondTest
+                />
             }
             default: {
                 return <FirstBlock 

@@ -48,7 +48,11 @@ export const CryptoMain = () => {
         <span className="opacity-50 text-xl text-center sm:text-sm">And that is just a part of the advantages! You can <br className="hidden sm:flex" /> learn more about cryptocurrency in this article</span>
         <div className="button-gradient p-[1px] flex justify-center items-center rounded-[10px]">
           <button className="cryptoMain-card-bg rounded-[10px] px-6 py-1.5 flex items-center justify-center space-x-3 sm:w-full">
-              <span className="font-montserrat">About</span>
+              <span className="font-montserrat">
+              <a href="https://support.forsage.io/article/education/crypto" target="_blank">
+                About
+                </a>
+                </span>
               <img className="w-[7px]" src="/icons/arrowRIght.svg" />
           </button>
         </div>
