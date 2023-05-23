@@ -67,7 +67,7 @@ export const NotTraidng = () => {
         </div>
         <img className="w-[1000px] absolute top-[100px] left-1/2 -translate-x-1/2 z-[-10] sm:h-[800px] sm:top-[380px] " src="/img/shadow/traidingSahdow.png" />
             <div className="bg-[#131314] w-[600px] rounded-[30px] p-5 flex space-x-6 sm:flex-col sm:space-x-0 sm:w-full sm:space-y-8 sm:p-0 sm:bg-transparent ">
-                <div className="bg-[#131314] border border-1  h-full w-full rounded-[20px] flex flex-col sm:border-none ">
+                <div className="bg-[#131314] opacity-50 border border-1  h-full w-full rounded-[20px] flex flex-col sm:border-none ">
                     <span className="text-2xl mt-[15px] text-center font-montserrat ">Traiding</span>
                     <div className="my-[40px] space-y-6 ">
                     {traiding.map((item, itemIndex) => {
