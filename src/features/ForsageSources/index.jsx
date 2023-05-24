@@ -82,11 +82,6 @@ export const ForsageSources = () => {
                         </div>
                     </div>
                 </div>
-
-
-
-
-
                 <div className="absolute w-full backdrop-blur-3xl  bottom-0 rounded-[30px] flex justify-evenly pt-[80px] sm:flex-col sm:items-center sm:justify-center pb-8 sm:space-y-5 ">
                 <div className="flex flex-col space-y-3 sm:items-center sm:justify-center ">
                         <span className="text-2xl font-montserrat">Help</span>

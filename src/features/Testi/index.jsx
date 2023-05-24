@@ -11,7 +11,12 @@ export const Testi = () => {
             firstTitle: [<span>A mnemonic phrase, or seed phrase, or "12 words" is <br className="sm:hidden" /> generated when you create a wallet. It cannot be changed or <br className="sm:hidden" />  recovered.</span>    ],
             secondTitle: [<span>The seed phrase allows you to have 100% access to your  <br className="sm:hidden" />  wallet and assets, so it is important to keep your 12 words <br className="sm:hidden" /> safe and not share them with third parties.</span>],
             img: "img/seedPhrase/12words.png",
-            desc: ["Don't share your 12 words with anyone."],
+            desc: [<div className="flex flex-col  justify-center space-y-2">
+            <div className="flex items-center space-x-3 "><div className="bg-[#2AF598] rounded-full h-[10px] w-[10px]"></div><span>Don't share your 12 words with anyone.</span></div>
+            <div className="flex items-center space-x-3 "> <div className="bg-[#2AF598] rounded-full h-[10px] w-[10px]"></div><span>Don't take pictures or screenshots of your seed phrase.</span></div>
+            <div className="flex items-center space-x-3 "><div className="bg-[#2AF598] rounded-full h-[10px] w-[10px]"></div><span>Don't type your 12 words on third-party websites or apps.</span></div>
+            <div className="flex items-center space-x-3 "><div className="bg-[#2AF598] rounded-full h-[10px] w-[10px]"></div><span>Keep your phrase on paper in the safest place possible.</span></div>
+            </div>],
             desc2: null,
         },
         {

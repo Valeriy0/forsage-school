@@ -37,7 +37,7 @@ export const SecondTest = ({}) => {
         },
     ]
     return(       
-        <div className="bg-[#14191B] rounded-[20px] px-[100px] py-[50px] flex flex-col items-center justify-start min-h-[700px] h-full space-y-9 h-full space-y-9 sm:px-3  w-full min-w-[800px] sm:min-w-full    ">
+        <div className="bg-[#14191B] rounded-[20px] px-[100px] py-[50px] flex flex-col items-center justify-start min-h-[700px] h-full space-y-9 h-full space-y-9 sm:px-3  w-full min-w-[900px] sm:min-w-full    ">
             <div className=" flex items-center">
                 <img src="/icons/greenCheckIcon.svg"/>
                 <span className="text-5xl font-montserrat text-[#2AF598]">Good</span>
