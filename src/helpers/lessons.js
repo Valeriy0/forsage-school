@@ -1,10 +1,12 @@
 export const course1 = {
   timeStart: '', // время старта курса
-  title: 'Start a business with Forsage',  // название всего курса
+  title: 'Start a business with Forsage', 
+  img: '/img/1lesson/1lesson.png', // название всего курса
   lessons: [
     // 1 урок
     {
       title: 'Start a business with Forsage',
+     
       // слайды , в 1ом уроке
       slides: [
         {
@@ -15,7 +17,7 @@ export const course1 = {
           renderImg: () => {
             return (
               <div>
-                <img src="" />
+                <img src="/img/1lesson/1lesson.png" />
               </div>
             )
           }
@@ -41,6 +43,32 @@ export const course1 = {
           renderImg: () => {
             return (
               <div>
+                <img src="/img/1lesson/1lesson.png" />
+              </div>
+            )
+          }
+
+        }
+      ],
+      test: [
+        {
+
+        }
+      ]
+
+    },
+    // 3 урок
+    {
+      title: 'Start a business with Forsage',
+      slides: [
+        {
+          title: '',
+          renderContent: () => {
+            return null;
+          },
+          renderImg: () => {
+            return (
+              <div>
                 <img src="" />
               </div>
             )
@@ -55,18 +83,67 @@ export const course1 = {
       ]
 
     },
+    // 4 урок
+    {
+      title: 'Start a business with Forsage',
+      slides: [
+        {
+          title: '',
+          renderContent: () => {
+            return null;
+          },
+          renderImg: () => {
+            return (
+              <div>
+                <img src="/img/1lesson/1lesson.png" />
+              </div>
+            )
+          }
+
+        }
+      ],
+      test: [
+        {
+
+        }
+      ]
+
+    },
+    // 5 урок
+    {
+      title: 'Start a business with Forsage',
+      slides: [
+        {
+          title: '',
+          renderContent: () => {
+            return null;
+          },
+          renderImg: () => {
+            return (
+              <div>
+                <img src="/img/1lesson/1lesson.png" />
+              </div>
+            )
+          }
+
+        }
+      ],
+      test: [
+        {
+
+        }
+      ]
+
+    },
+    
 
   ]
 };
 
-export const course2 = {
-
-};
 
 
 
 export const allCourses = [
   course1,
-  course2
 ];
 
