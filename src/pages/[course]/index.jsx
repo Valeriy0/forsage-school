@@ -9,6 +9,7 @@ const Course = () => {
 
   console.log(courseNumber, allCourses?.[courseNumber]?.lessons);
 
+  // const lessonLink = query?.course + '/lesson' + itemIndexLesson'a
   return (
     <div className="">
       {courseNumber}
