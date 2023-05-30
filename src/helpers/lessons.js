@@ -1,12 +1,12 @@
 export const course1 = {
   timeStart: '', // время старта курса
   title: 'Start a business with Forsage', 
+  key: 'start-a-business-with-forsage',
   img: '/img/1lesson/1lesson.png', // название всего курса
   lessons: [
     // 1 урок
     {
       title: 'Start a business with Forsage',
-     
       // слайды , в 1ом уроке
       slides: [
         {
@@ -34,6 +34,7 @@ export const course1 = {
     // 2 урок
     {
       title: 'Start a business with Forsage',
+      key: 'start-a-business-with-forsage',
       slides: [
         {
           title: '',
