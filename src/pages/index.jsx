@@ -2,27 +2,12 @@ import React, { useMemo } from 'react';
 import { allCourses } from '@/helpers/lessons';
 import { NewForsageSources } from '@/features/NewForsageSources';
 import { useRouter } from 'next/router';
+import { CourseCard } from '@/features/Main/CourseCard';
 
 const Index = () => {
   const { push } = useRouter();
   const renderCourses = useMemo(() => {
-    return allCourses?.map((item, itemIndex) =>
-    {
-      const lessonLink = '/course' + (itemIndex + 1);
-      return (
-        <a href={lessonLink} className="flex flex-col bg-white-150 p-3 rounded-[20px] space-y-4"> 
-          <img className="h-[170px]" src={item?.img}/>
-          <div className="flex flex-col px-4 space-y-[40px] items-start">
-            <div className="text-xl font-medium">
-              {item?.title}
-            </div>
-            <div className="text-[#3EF6A2]">
-              {item?.lessons?.length} lessons
-            </div>
-          </div>
-        </a>
-      )
-    }
+    return allCourses?.map((item, itemIndex) => <CourseCard {...item} key={itemIndex} />
     )
   }, [allCourses])
 
