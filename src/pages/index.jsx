@@ -18,7 +18,7 @@ const Index = () => {
               {item?.title}
             </div>
             <div className="text-[#3EF6A2]">
-              {item?.lessons?.length} lesson
+              {item?.lessons?.length} lessons
             </div>
           </div>
         </a>

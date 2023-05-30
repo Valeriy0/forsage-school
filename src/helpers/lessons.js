@@ -7,6 +7,7 @@ export const course1 = {
     // 1 урок
     {
       title: 'Start a business with Forsage',
+      icon: '',
       // слайды , в 1ом уроке
       slides: [
         {
@@ -33,8 +34,8 @@ export const course1 = {
     },
     // 2 урок
     {
-      title: 'Start a business with Forsage',
-      key: 'start-a-business-with-forsage',
+      title: 'Security',
+      icon: '',
       slides: [
         {
           title: '',
@@ -60,7 +61,8 @@ export const course1 = {
     },
     // 3 урок
     {
-      title: 'Start a business with Forsage',
+      title: 'Crypto wallets',
+      icon: '',
       slides: [
         {
           title: '',
@@ -86,7 +88,8 @@ export const course1 = {
     },
     // 4 урок
     {
-      title: 'Start a business with Forsage',
+      title: 'Marketing',
+      icon: '',
       slides: [
         {
           title: '',
@@ -112,7 +115,8 @@ export const course1 = {
     },
     // 5 урок
     {
-      title: 'Start a business with Forsage',
+      title: 'Tips for finding new partners',
+      icon: '',
       slides: [
         {
           title: '',

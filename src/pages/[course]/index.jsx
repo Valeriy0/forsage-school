@@ -7,8 +7,7 @@ const Course = () => {
   const { query } = useRouter();
 
   const courseNumber = query?.course?.slice(-1) - 1;
-
-  console.log(courseNumber, allCourses?.[courseNumber]?.lessons);
+  const lessonsList = allCourses?.[courseNumber]?.lessons;
 
   const spline = useRef();
   const [isLoadingAnim, setIsLoadingAnim] = useState(true);
@@ -26,7 +25,6 @@ const Course = () => {
 
   const myScene= 'https://prod.spline.design/WBWqwfLkAoaoFy7O/scene.splinecode';
 
-  // const lessonLink = query?.course + '/lesson' + itemIndexLesson'a
   return (
 
     <div className="flex flex-col items-start justify-center space-y-[20px] pb-10 sm:pb-0 sm:space-y-[60px] px-[30px] pt-[30px]">
@@ -34,7 +32,7 @@ const Course = () => {
         <div className="w-[40px] h-[40px] bg-[#31B379] rounded-full flex items-center justify-center">
           <img className="" src="/icons/leftArrow.svg"/>
         </div>
-        <span className="font-montserrat text-white-500">Back to Courses</span>
+        <a href='/' className="font-montserrat text-white-500">Back to Courses</a>
       </button>
       <div className="w-full ">
         <img className="relatve w-full" src="/img/bg1course.png"/> 
@@ -57,27 +55,18 @@ const Course = () => {
         </div>
       </div>
       <div className="w-full space-y-5">
-        <div className="bg-white-150 flex items-center space-x-5 w-full p-5 rounded-[30px] lessons_block ">
-          <div className="bg-[#3EF6A2] rounded-[15px] w-[60px] h-[60px] "></div>
-          <div className="flex flex-col">
-            <span className="text-sm">Lesson 1</span>
-            <span className="font-medium">Start a business with Forsage</span>
-          </div>
-        </div>
-        <div className="bg-white-150 flex items-center space-x-5 w-full p-5 rounded-[30px] lessons_block">
-          <div className="bg-[#3EF6A2] rounded-[15px] w-[60px] h-[60px] "></div>
-          <div className="flex flex-col">
-            <span className="text-sm">Lesson 1</span>
-            <span className="font-medium">Start a business with Forsage</span>
-          </div>
-        </div>
-        <div className="bg-white-150 flex items-center space-x-5 w-full p-5 rounded-[30px] lessons_block">
-          <div className="bg-[#3EF6A2] rounded-[15px] w-[60px] h-[60px] "></div>
-          <div className="flex flex-col">
-            <span className="text-sm">Lesson 1</span>
-            <span className="font-medium">Start a business with Forsage</span>
-          </div>
-        </div>
+        {lessonsList.map((item, itemIndex) => {
+          const lessonLink = '/' + query?.course + '/lesson' + (itemIndex + 1);
+          return (
+            <a href={lessonLink} className="bg-white-150 flex items-center space-x-5 w-full p-5 rounded-[30px] lessons_block ">
+              <div className="bg-[#3EF6A2] rounded-[15px] w-[60px] h-[60px] "></div>
+              <div className="flex flex-col">
+                <span className="text-sm">Lesson {itemIndex + 1}</span>
+                <span className="font-medium">{item?.title}</span>
+              </div>
+            </a>
+          )
+        })}
       </div>
     </div>
 
