@@ -8,10 +8,9 @@ const Index = () => {
   const renderCourses = useMemo(() => {
     return allCourses?.map((item, itemIndex) =>
     {
-      const lessonLink = 'course' + (itemIndex + 1);
+      const lessonLink = '/course' + (itemIndex + 1);
       return (
         <a href={lessonLink} className="flex flex-col bg-white-150 p-3 rounded-[20px] space-y-4"> 
-          {/* <img className="h-[170px]" src="/img/1lesson/1lesson.png" /> */}
           <img className="h-[170px]" src={item?.img}/>
           <div className="flex flex-col px-4 space-y-[40px] items-start">
             <div className="text-xl font-medium">
@@ -43,12 +42,12 @@ const Index = () => {
           <div className='rounded-full w-full bg-[#3EF6A2] h-[10px]'></div>
         </div>
       </div>
-      <a href="/" className="space-y-5 flex flex-col items-start justify-start">
+      <div className="space-y-5 flex flex-col items-start justify-start">
         <span className="text-2xl font-medium">Courses</span>
       <div className="flex flex-wrap space-x-7 ">
         {renderCourses}
       </div>
-      </a>
+      </div>
       <NewForsageSources />
     </div>
   )

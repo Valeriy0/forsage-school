@@ -197,3 +197,7 @@ html {
 .lessons_block {
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 }
+
+.lessonItem_gradient { 
+	background: radial-gradient(112.5% 114.37% at 0% 0%, #2AF598 0%, #009EFD 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+}
