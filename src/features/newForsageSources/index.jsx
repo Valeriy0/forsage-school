@@ -41,45 +41,45 @@ export const NewForsageSources = () => {
     ]
     const join = [
         {
-            title: 'Telegram',
+            icon: '/icons/socials/telegram.svg',
             href: 'https://t.me/forsageio_official/',
         },
         {
-            title: 'Instagram',
+            icon: '/icons/socials/instagram.svg',
             href: 'https://www.instagram.com/forsagematrix/ ',
         },
         {
-            title: 'YouTube',
+            icon: '/icons/socials/youtube.svg',
             href: 'https://www.youtube.com/channel/UC4ZUzYVAw01R9ERwBte-eQA',
         },
         {
-            title: 'Medium',
+            icon: '/icons/socials/mingcute_medium-fill.svg',
             href: 'https://forsageio.medium.com/',
         },
         {
-            title: 'GitBook',
+            icon: '/icons/socials/gitbook.svg',
             href: 'http://support.forsage.io/',
         },
         {
-            title: 'Discord',
+            icon: '/icons/socials/discord.svg',
             href: 'https://discord.gg/forsage',
         },
         {
-            title: 'Twitter',
+            icon: '/icons/socials/twitter.svg',
             href: 'https://twitter.com/forsageofficial',
         },
     ]
     return(
-        <div className="pt-[600px] flex flex-col items-center justify-center space-y-[120px] relative w-full p-[50px] sm:p-0 sm:p-4 sm:space-y-[50px] sm:mt-[30px]">
-            <img className="absolute w-full bottom-0 z-[-20]" src="/img/ForsageSources/bg.png"/>
-            <div className="sm:px-4 relative w-full flex flex-col items-center    ">
-                <div className="absolute w-full backdrop-blur-xl  bottom-0 rounded-[30px] flex justify-evenly pt-[80px] sm:flex-col sm:items-center sm:justify-center pb-8 sm:space-y-5 footer_block ">
+        <div className=" flex flex-col items-center justify-center space-y-[120px] relative w-full p-[50px] sm:p-0 sm:py-4 sm:px-2 sm:space-y-[30px] sm:mt-[30px] ">
+            <img className="absolute w-full bottom-0 z-[-20] px-[15px] sm:px-0" src="/img/ForsageSources/bg.png"/>
+            <div className=" relative w-full flex flex-col items-center     ">
+                <div className=" w-full backdrop-blur-xl  bottom-0 rounded-[30px] flex justify-evenly pt-[80px] sm:flex-col sm:items-center sm:justify-center pb-8 sm:space-y-5 footer_block sm:pt-[20px] ">
                      <div className="flex flex-col space-y-3 sm:items-center sm:justify-center ">
-                        <span className="text-2xl font-montserrat font-medium">Website</span>
+                        <span className="text-2xl font-montserrat font-medium text-white">Website</span>
                         <div className="flex flex-col sm:items-center space-y-2">
                         {website.map((item) => {
                         return (
-                            <span className="opacity-50">
+                            <span className="opacity-50 text-black-00">
                                 <a href={item.href} target="_blank">{item.title}</a>
                             </span>
                         )
@@ -87,7 +87,7 @@ export const NewForsageSources = () => {
                         </div>
                     </div>
                      <div className="flex flex-col space-y-3 sm:items-center sm:justify-center ">
-                        <span className="text-2xl font-montserrat font-medium">Help</span>
+                        <span className="text-2xl font-montserrat font-medium text-white">Help</span>
                         <div className="flex flex-col sm:items-center space-y-2">
                         {help.map((item) => {
                         return (
@@ -99,7 +99,7 @@ export const NewForsageSources = () => {
                         </div>
                     </div>
                     <div className="flex flex-col space-y-3 sm:items-center sm:justify-center ">
-                    <span className="text-2xl font-montserrat font-medium ">Telegram Bots</span>
+                    <span className="text-2xl font-montserrat font-medium text-white ">Telegram Bots</span>
                     <div className="flex flex-col sm:items-center space-y-2">
                         {bots.map((item) => {
                             return (
@@ -110,17 +110,18 @@ export const NewForsageSources = () => {
                          })}
                          </div>
                     </div>
-                    <div className="flex flex-col space-y-3 sm:items-center sm:justify-center">
-                    <span className="text-2xl font-montserrat font-medium">Join us</span>
-                    <div className="flex flex-col sm:items-center space-y-2">
-                    {join.map((item) => {
-                            return (
-                            <span className="opacity-50">
-                                <a href={item.href} target="_blank">{item.title}</a>
-                            </span>
-                            )
-                    })}
-                    </div>
+                    <div className="flex flex-col items-center space-y-3 sm:items-center sm:justify-center">
+                        <span className="text-2xl font-montserrat font-medium text-white">Join us</span>
+                        <div className="flex items-center justify-center sm:items-center space-x-4">
+                        {join.map((item) => {
+                                return (
+
+                                    <a href={item.href} target="_blank">{item.title}
+                                        <img className="" src={item.icon}/>
+                                    </a>
+                                )
+                        })}
+                        </div>
                     </div>
                 </div>
             </div>

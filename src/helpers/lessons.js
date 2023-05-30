@@ -3,6 +3,7 @@ export const course1 = {
   title: 'Start a business with Forsage', 
   key: 'start-a-business-with-forsage',
   img: '/img/1lesson/1lesson.png', // название всего курса
+  imgMob: '/img/1lesson/1lessonMob.png',
   lessons: [
     // 1 урок
     {
@@ -18,7 +19,7 @@ export const course1 = {
           renderImg: () => {
             return (
               <div>
-                <img src="/img/1lesson/1lesson.png" />
+                <img  src="/img/1lesson/1lesson.png" />
               </div>
             )
           }

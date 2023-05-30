@@ -2,7 +2,7 @@ import react, { useState } from "react";
 import Countdown from 'react-countdown';
 import { isBefore } from 'date-fns';
 
-export const CourseCard = ({ img , lessons, title, timeStart, key }) => {
+export const CourseCard = ({ img , lessons, title, timeStart, key, imgMob }) => {
   const courseLink = '/course' + (key + 1);
   const [isCompletedTimer, setIsCompletedTimer] = useState(
     !isBefore(new Date(), new Date(timeStart)),
@@ -40,8 +40,8 @@ export const CourseCard = ({ img , lessons, title, timeStart, key }) => {
 
   if (!isCompletedTimer) {
     return (
-      <div className="flex flex-col bg-white-150 p-3 rounded-[20px] space-y-4"> 
-        <img className="h-[170px]" src='/icons/loadingCourse.svg'/>
+      <div className="flex flex-col bg-white-150 p-3 rounded-[20px] space-y-4 sm:flex-row sm:items-center sm:space-y-0"> 
+        <img className="h-[170px] sm:h-[100px] sm:bg-white-50 sm:rounded-[20px] sm:p-3" src='/icons/loadingCourse.svg'/>
         <div className="flex flex-col px-4 space-y-[40px] items-start">
           <div className="flex items-center">
             <Countdown
@@ -56,10 +56,11 @@ export const CourseCard = ({ img , lessons, title, timeStart, key }) => {
   }
 
   return (
-    <a href={courseLink} className="flex flex-col bg-white-150 p-3 rounded-[20px] space-y-4"> 
-      <img className="h-[170px]" src={img}/>
-      <div className="flex flex-col px-4 space-y-[40px] items-start">
-        <div className="text-xl font-medium">
+    <a href={courseLink} className="flex flex-col bg-white-150 p-3 rounded-[20px] space-y-4 sm:space-y-0 sm:flex-row"> 
+      <img className="h-[170px]  sm:hidden" src={img}/>
+      <img className="h-[100px] hidden sm:flex" src={imgMob}/>
+      <div className="flex flex-col px-4 space-y-[40px] items-start sm:space-y-[10px] sm:justify-center">
+        <div className="text-xl font-medium sm:text-base">
           {title}
         </div>
         <div className="text-[#3EF6A2]">

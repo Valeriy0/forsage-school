@@ -1834,6 +1834,11 @@ nanoid@^3.3.4, nanoid@^3.3.6:
   resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.3.6.tgz#443380c856d6e9f9824267d960b4236ad583ea4c"
   integrity sha512-BGcqMMJuToF7i1rt+2PWSNVnWIkGCU78jBG3RxO/bZlnZPK2Cmi2QaffxGO/2RvWi9sL+FAiRiXMgsyxQ1DIDA==
 
+next-next-link@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/next-next-link/-/next-next-link-0.0.1.tgz#c92d12ab783cc14174fe28fb2b2263a8ab96e0e6"
+  integrity sha512-IK3GeT+kUhR66in6p7QEn6AELOKQdcvLz13AFGw4cWW4bgqvq6r8IV+mSaGtNUJrZEVQhmrBfkJ0eP5g6I3awg==
+
 next@13.3.1:
   version "13.3.1"
   resolved "https://registry.yarnpkg.com/next/-/next-13.3.1.tgz#17625f7423db2e059d71b41bd9031756cf2b33bc"
