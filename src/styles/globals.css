@@ -189,6 +189,11 @@ html {
 }
 
 
+
 .footer_block {
 	box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.45);
+}
+
+.lessons_block {
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 }

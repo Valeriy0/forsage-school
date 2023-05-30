@@ -45,7 +45,7 @@ const Index = () => {
       </div>
       <a href="/" className="space-y-5 flex flex-col items-start justify-start">
         <span className="text-2xl font-medium">Courses</span>
-        <div className="flex flex-wrap space-x-7 ">
+      <div className="flex flex-wrap space-x-7 ">
         {renderCourses}
       </div>
       </a>

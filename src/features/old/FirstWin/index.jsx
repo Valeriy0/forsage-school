@@ -17,7 +17,7 @@ export const FirstWin = () => {
     spline.current = splineApp;
   }
 
-
+  const myScene= 'https://prod.spline.design/WBWqwfLkAoaoFy7O/scene.splinecode';
   
 
   const wrapperStyle = {
@@ -26,7 +26,7 @@ export const FirstWin = () => {
     backgroundPosition: 'center',
   };
 
-  const myScene= 'https://prod.spline.design/WBWqwfLkAoaoFy7O/scene.splinecode';
+  
   return (
     <div className="relative flex flex-col w-full max-w-[1300px] w-full">
       <div className="relative flex w-full px-4">
