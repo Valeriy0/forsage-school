@@ -11,6 +11,8 @@ const Index = () => {
     )
   }, [allCourses])
 
+  const percent = 10 + '%'
+
   return (
     <div className="flex flex-col items-start justify-center space-y-[40px] pb-10 sm:pb-0 sm:space-y-[30px]  pt-[30px] sm:pt-0 ">
         <img className="h-[37px] sm:hidden px-[15px] " src="/img/logo.png" alt="" />
@@ -24,9 +26,12 @@ const Index = () => {
         <div className="absolute bottom-1/4 left-[70px] flex flex-col justify-between space-y-2 w-5/6 sm:bottom-5 sm:left-[30px]">
           <div className="flex justify-between items-end">
           <span className='text-xl font-montserrat sm:text-base'>Knowledge level</span>
-          <span className='text-xl font-montserrat'>70%</span>
+          <span className='text-xl font-montserrat'>{percent}</span>
           </div>
-          <div className='rounded-full w-full bg-[#3EF6A2] h-[10px]'></div>
+          <div className="relative percentMain w-full h-[16px] rounded-full">
+            <div className={`absolute rounded-full w-[${percent}] bg-[#3EF6A2] top-0 left-0 h-full`} />
+          </div>
+          
         </div>
       </div>
       <div className="space-y-5 flex flex-col items-start justify-start sm:space-y-2 px-[15px] w-full">
