@@ -40,7 +40,7 @@ export const CourseCard = ({ img , lessons, title, timeStart, key, imgMob }) => 
 
   if (!isCompletedTimer) {
     return (
-      <div className="flex flex-col bg-white-150 px-[120px] rounded-[20px] space-y-6 sm:flex-row sm:items-center sm:space-y-0 items-center justify-center"> 
+      <div className="flex flex-col bg-white-150 px-[120px] rounded-[20px] space-y-6 sm:flex-row sm:items-center sm:space-y-0 items-center justify-center sm:items-start sm:justify-start sm:p-3"> 
         <img className="h-[110px] sm:h-[100px] sm:bg-white-50 sm:rounded-[20px] sm:p-3" src='/icons/loadingCourse.svg'/>
         <div className="flex flex-col px-4 space-y-[40px] items-start">
           <div className="flex items-center text-5xl ">
