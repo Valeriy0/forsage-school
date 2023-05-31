@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
 import { allCourses } from '@/helpers/lessons';
-import { NewForsageSources } from '@/features/NewForsageSources';
+import { FooterSources } from '@/features/FooterSources';
 import { useRouter } from 'next/router';
 import { CourseCard } from '@/features/Main/CourseCard';
 
@@ -35,7 +35,7 @@ const Index = () => {
           {renderCourses}
         </div>
       </div>
-      <NewForsageSources  />
+      <FooterSources  />
     </div>
   )
 }

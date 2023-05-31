@@ -1,6 +1,6 @@
 import React from "react";
 
-export const NewForsageSources = () => {
+export const FooterSources = () => {
     const website = [
         {
             title: 'forsage.io',
