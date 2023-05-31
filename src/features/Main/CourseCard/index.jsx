@@ -2,8 +2,8 @@ import react, { useState } from "react";
 import Countdown from 'react-countdown';
 import { isBefore } from 'date-fns';
 
-export const CourseCard = ({ img , lessons, title, timeStart, key, imgMob }) => {
-  const courseLink = '/course' + (key + 1);
+export const CourseCard = ({ img , lessons, title, timeStart, num, imgMob }) => {
+  const courseLink = '/course' + (num + 1);
   const [isCompletedTimer, setIsCompletedTimer] = useState(
     !isBefore(new Date(), new Date(timeStart)),
   );

@@ -7,7 +7,7 @@ import { CourseCard } from '@/features/Main/CourseCard';
 const Index = () => {
   const { push } = useRouter();
   const renderCourses = useMemo(() => {
-    return allCourses?.map((item, itemIndex) => <CourseCard {...item} key={itemIndex} />
+    return allCourses?.map((item, itemIndex) => <CourseCard {...item} num={itemIndex} key={itemIndex} />
     )
   }, [allCourses])
 
