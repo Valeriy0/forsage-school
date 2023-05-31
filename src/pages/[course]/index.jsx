@@ -30,7 +30,7 @@ const Course = () => {
     backgroundImage: `url('/img/bg1course.png')`,
     backgroundRepeat: 'round',
     backgroundSize: 'cover',
-  };
+    };
 
   return (
 

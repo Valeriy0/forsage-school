@@ -40,10 +40,10 @@ export const CourseCard = ({ img , lessons, title, timeStart, key, imgMob }) => 
 
   if (!isCompletedTimer) {
     return (
-      <div className="flex flex-col bg-white-150 p-3 rounded-[20px] space-y-4 sm:flex-row sm:items-center sm:space-y-0"> 
-        <img className="h-[170px] sm:h-[100px] sm:bg-white-50 sm:rounded-[20px] sm:p-3" src='/icons/loadingCourse.svg'/>
+      <div className="flex flex-col bg-white-150 px-[120px] rounded-[20px] space-y-6 sm:flex-row sm:items-center sm:space-y-0 items-center justify-center"> 
+        <img className="h-[110px] sm:h-[100px] sm:bg-white-50 sm:rounded-[20px] sm:p-3" src='/icons/loadingCourse.svg'/>
         <div className="flex flex-col px-4 space-y-[40px] items-start">
-          <div className="flex items-center">
+          <div className="flex items-center text-5xl ">
             <Countdown
               onComplete={() => setIsCompletedTimer(true)}
               date={timeStart}
@@ -56,7 +56,7 @@ export const CourseCard = ({ img , lessons, title, timeStart, key, imgMob }) => 
   }
 
   return (
-    <a href={courseLink} className="flex flex-col bg-white-150 p-3 rounded-[20px] space-y-4 sm:space-y-0 sm:flex-row"> 
+    <a href={courseLink} className="flex flex-col bg-white-150 p-3 rounded-[20px] space-y-4 sm:space-y-0 sm:flex-row "> 
       <img className="h-[170px]  sm:hidden" src={img}/>
       <img className="h-[100px] hidden sm:flex" src={imgMob}/>
       <div className="flex flex-col px-4 space-y-[40px] items-start sm:space-y-[10px] sm:justify-center">
