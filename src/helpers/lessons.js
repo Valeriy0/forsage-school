@@ -12,9 +12,11 @@ export const course1 = {
       // слайды , в 1ом уроке
       slides: [
         {
-          title: '',
+          title: 'fdsf',
           renderContent: () => {
-            return null;
+            return (
+              <div>Привет</div>
+            );
           },
           renderImg: () => {
             return (
