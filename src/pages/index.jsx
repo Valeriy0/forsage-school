@@ -29,9 +29,9 @@ const Index = () => {
           <div className='rounded-full w-full bg-[#3EF6A2] h-[10px]'></div>
         </div>
       </div>
-      <div className="space-y-5 flex flex-col items-start justify-start sm:space-y-2 px-[15px] sm:w-full">
+      <div className="space-y-5 flex flex-col items-start justify-start sm:space-y-2 px-[15px] w-full">
         <span className="text-2xl font-semibold">Courses</span>
-        <div className="flex flex-wrap space-x-7 sm:flex-col sm:space-x-0 sm:space-y-4 sm:w-full">
+        <div className="w-full grid grid-cols-3 gap-2.5 sm:grid-cols-1">
           {renderCourses}
         </div>
       </div>
