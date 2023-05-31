@@ -53,7 +53,7 @@ const Lesson = () => {
         {prevBtn}
         {/* slide content */}
         <div className="flex bg-white-120 rounded-[30px] w-full h-full space-x-10">
-          <div className="pl-[70px] flex flex-col justify-center items-center space-y-[70px] h-full flex-1">
+          <div className="pl-[70px] flex flex-col justify-center items-start space-y-[70px] h-full flex-1">
             <span className="text-3xl font-montserrat font-semibold">
               {lessonInfo?.slides?.[currentSlide]?.title}
             </span>
