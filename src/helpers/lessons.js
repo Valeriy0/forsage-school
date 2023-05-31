@@ -32,8 +32,8 @@ export const course1 = {
               <div className="flex flex-col space-y-5">
                 {info.map((item) => {
                   return (
-                  <div className=" flex items-start space-x-3">
-                    <div className="w-[20px] h-[20px] bg-[#3FF6A3] rounded-full" />
+                  <div className=" flex justify-start items-start space-x-3">
+                    <div className="mt-[2px] w-[20px] h-[20px] bg-[#3FF6A3] rounded-full" />
                     <span className="opacity-50 font-light">{item.title}</span>
                   </div>
                   )
