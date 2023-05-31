@@ -40,7 +40,7 @@ const Lesson = () => {
   return (
     <div className="h-full flex flex-col p-8 space-y-[20px] ">
       {/* {lessonNumber} */}
-      <CustomLink href={`/courses${courseNumber}`}>
+      <CustomLink href={`/courses${courseNumber + 1}`}>
       <button className="flex items-center space-x-5 sm:absolute z-[1] sm:p-4">
         <div className="w-[40px] h-[40px] bg-[#31B379] rounded-full flex items-center justify-center">
           <img className="" src="/icons/leftArrow.svg"/>
