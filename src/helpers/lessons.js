@@ -44,7 +44,7 @@ export const course1 = {
           renderImg: () => {
             return (
               <div className="w-full h-full flex items-center justify-center">
-                <img className="max-h-full" src="/img/courses/lessons/1/1.png" />
+                <img className="max-h-[75%]" src="/img/courses/lessons/1/1.png" />
               </div>
             )
           }
@@ -87,12 +87,40 @@ export const course1 = {
               </div>
             )
           }
+        },
+        // lesson 1 - slide 3
+        {
+          title: 'Forsage is not trading',
+          renderContent: () => {
+            
+            return (
+              <div className="flex flex-col space-y-5">
+                <span className="opacity-50 font-light">
+                  Forsage is a network-type business with a clear and transparent economic model that has been successfully operating for 3 years.
+                </span>
+              </div>
+            );
+          },
+          renderImg: () => {
+            return (
+              <div className="w-full h-full flex items-center justify-center">
+                <img className="max-h-full" src="/img/courses/lessons/1/3.png" />
+              </div>
+            )
+          }
 
         }
       ],
       test: [
         {
-
+          question: 'How do you earn at Forsage ?',
+          trueAnswer: 2,
+          clue: 'Forsage is a platform for starting an online business where you can earn money by inviting people.',
+          answers: [
+            'Activate levels in programs and wait for passive income.',
+            'Invite partners to your team and activate levels and programs together.',
+            'Wait for income from your upline partner.'
+          ]
         }
       ]
 

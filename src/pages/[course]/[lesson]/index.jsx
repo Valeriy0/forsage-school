@@ -26,7 +26,7 @@ const Lesson = () => {
   const nextBtn = useMemo(() => {
     return (
       <div className="w-[40px] h-[40px]">
-        {currentSlide < maxLessonSlides - 1 && (
+        {currentSlide < maxLessonSlides + 1 && (
           <button onClick={() => setCurrentSlide(currentSlide + 1)} className="bg-white-150 w-full h-full rounded-full flex items-center justify-center">
             <img className="h-[20px] h-[20px]" src="/icons/arrowRightIcon.svg"/>
           </button>
@@ -34,6 +34,38 @@ const Lesson = () => {
       </div>
     )
   }, [currentSlide, maxLessonSlides])
+
+  console.log(currentSlide, maxLessonSlides)
+
+  const renderContent = useMemo(() => {
+    if (currentSlide < maxLessonSlides)
+    {
+      return (
+          <div className="flex bg-white-120 rounded-[30px] w-full h-full space-x-10 px-[70px]">
+            <div className="flex flex-col justify-center items-start space-y-[70px] h-full flex-1">
+              <span className="text-3xl font-montserrat font-semibold">
+                {lessonInfo?.slides?.[currentSlide]?.title}
+              </span>
+              {lessonInfo?.slides?.[currentSlide]?.renderContent()}
+            </div>
+            <div className="flex-1 flex items-center justify-center h-full">
+              {lessonInfo?.slides?.[currentSlide]?.renderImg()}
+            </div>
+          </div>
+        )
+    }
+    if (currentSlide === maxLessonSlides) {
+      return (
+        <div className="w-full h-full">test</div>
+      )
+    }
+    if (currentSlide === maxLessonSlides + 1) {
+      return (
+        <div className="w-full h-full">success</div>
+      )
+    }
+      
+  }, [currentSlide, maxLessonSlides, lessonInfo, currentSlide])
 
 
 
@@ -52,17 +84,7 @@ const Lesson = () => {
       <div className="h-full flex-1 flex items-center w-full space-x-4">
         {prevBtn}
         {/* slide content */}
-        <div className="flex bg-white-120 rounded-[30px] w-full h-full space-x-10">
-          <div className="pl-[70px] flex flex-col justify-center items-start space-y-[70px] h-full flex-1">
-            <span className="text-3xl font-montserrat font-semibold">
-              {lessonInfo?.slides?.[currentSlide]?.title}
-            </span>
-            {lessonInfo?.slides?.[currentSlide]?.renderContent()}
-          </div>
-          <div className="flex-1 flex items-center justify-center h-full">
-            {lessonInfo?.slides?.[currentSlide]?.renderImg()}
-          </div>
-        </div>
+        {renderContent}
         {nextBtn}
       </div>
     </div>
