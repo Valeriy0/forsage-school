@@ -90,8 +90,8 @@ const Lesson = () => {
               <img className="absolute h-[500px] top-0 right-0 " src="/img/testFinish/rightConfity.png"/>
               <div className=" flex flex-col items-center justify-between h-full">
                 <span className="font-montserrat text-3xl font-bold">Сongratulations!</span>
-                  <img className="h-[200px] z-[11] relative " src="/img/testFinish/success.png" alt="" />
-                  <img className="absolute" src="/img/testFinish/successShadow.png"/>
+                  <img className="h-[190px] z-[11] absolute top-[50.75%] left-1/2 -translate-x-1/2 -translate-y-1/2 " src="/img/testFinish/success.png" alt="" />
+                  <img className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" src="/img/testFinish/successShadow.png"/>
                 <span className="text-center text-xl">you have <br /> completed {lessonNumber + 1} lesson</span>
               </div>
             </div>
