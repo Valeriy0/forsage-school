@@ -91,8 +91,7 @@ export const course1 = {
         // lesson 1 - slide 3
         {
           title: 'Forsage is not trading',
-          renderContent: () => {
-            
+          renderContent: () => {    
             return (
               <div className="flex flex-col space-y-5">
                 <span className="opacity-50 font-light">
@@ -108,7 +107,6 @@ export const course1 = {
               </div>
             )
           }
-
         }
       ],
       test: [
@@ -149,8 +147,7 @@ export const course1 = {
         {
 
         }
-      ]
-
+      ] 
     },
     // 3 урок
     {

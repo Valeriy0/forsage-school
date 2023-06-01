@@ -202,6 +202,7 @@ module.exports = {
         'green-200': 'rgba(44, 255, 78, 0.2)',
         'green-350': '#21B914',
         'green-700': '#00A38C',
+        'green-dark': 'rgba(0, 219, 131, 0.8)',
         'hover-green': '#4dc742',
         'active-green': '#1a9410',
         red: '#E1444D',

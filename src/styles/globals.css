@@ -190,6 +190,10 @@ html {
 
 
 
+.tests_block {
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
+}
+
 .footer_block {
 	box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.45);
 }
