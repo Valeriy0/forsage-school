@@ -7,6 +7,7 @@ import { LessonLayout } from "@/Layouts";
 
 const Lesson = () => {
   const { query } = useRouter();
+
   const [currentSlide, setCurrentSlide] = useState(0);
   const courseNumber = query?.course?.slice(-1) - 1;
   const lessonNumber = query?.lesson?.slice(-1) - 1;
@@ -23,6 +24,8 @@ const Lesson = () => {
       setCurrentSlide(currentSlide + 1);
     }
   }
+
+  console.log(lessonNumber);
 
   const prevBtn = useMemo(() => {
     return (
@@ -48,7 +51,6 @@ const Lesson = () => {
     )
   }, [currentSlide, maxLessonSlides])
 
-  console.log(currentSlide, maxLessonSlides)
 
   const renderContent = useMemo(() => {
     if (currentSlide < maxLessonSlides)
@@ -85,14 +87,16 @@ const Lesson = () => {
                 <span className="font-montserrat text-3xl font-bold">Сongratulations!</span>
                   <img className="h-[200px] z-[11] relative " src="/img/testFinish/success.png" alt="" />
                   <img className=" absolute top-[-25px]" src="/img/testFinish/successShadow.png"/>
-                <span className="text-center text-xl">you have <br /> completed {lessonNumber} lesson</span>
+                <span className="text-center text-xl">you have <br /> completed {lessonNumber + 1} lesson</span>
               </div>
             </div>
           </div>
           <div className="button-gradient p-[1px] rounded-[15px]">
-            <button className="rounded-[15px] py-3 px-7 w-full bg-[#131314] w-full ">
-              <span className="text-xl font-montserrat font-medium ">Next lesson</span>
-            </button>
+            <CustomLink href="/courses1/lesson2">
+              <button className="rounded-[15px] py-3 px-7 w-full bg-[#131314] w-full ">
+                <span className="text-xl font-montserrat font-medium ">Next lesson</span>
+              </button>
+            </CustomLink>
           </div>
       </div>
       )
