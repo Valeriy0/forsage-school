@@ -33,7 +33,7 @@ export const course1 = {
                 {info.map((item) => {
                   return (
                   <div className=" flex justify-start items-start space-x-3">
-                    <div className="mt-[2px] w-[20px] h-[20px] bg-[#3FF6A3] rounded-full" />
+                    <div className="flex-shrink-0 mt-[2px] w-[20px] h-[20px] bg-[#3FF6A3] rounded-full" />
                     <span className="opacity-50 font-light">{item.title}</span>
                   </div>
                   )
@@ -43,7 +43,7 @@ export const course1 = {
           },
           renderImg: () => {
             return (
-              <div className="w-full h-full flex items-center justify-center">
+              <div className="w-full h-full flex items-center justify-center sm:hidden">
                 <img className="max-h-[75%]" src="/img/courses/lessons/1/1.png" />
               </div>
             )
