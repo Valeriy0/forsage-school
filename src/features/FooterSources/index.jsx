@@ -27,14 +27,6 @@ export const FooterSources = () => {
             href: 'https://t.me/busd_forsage_io_bot',
         },
         {
-            title: 'Ethereum Notifier',
-            href: ' https://t.me/forsage_io_bot',
-        },
-        {
-            title: 'Tron Notifier',
-            href: 'https://t.me/tronforsage_bot',
-        },
-        {
             title: 'BSC Explorer',
             href: 'https://t.me/BSCexplorerbot',
         }
