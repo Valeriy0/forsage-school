@@ -31,7 +31,10 @@ export const QuestionSection = ({ lessonInfo, currentQuestion, nextQuestion }) =
             <img src="/icons/courses/test/success.svg" alt="" />
             <span className="text-lg text-[#2AF598]">Good</span>
           </div>
-          <button className="text-lg py-5 px-[30px] border border-white rounded-[15px]" onClick={() => nextQuestion()}>Next</button>
+          <button className="text-lg py-5 px-[30px] border border-white rounded-[15px]" onClick={() =>  {
+            nextQuestion();
+            setAnswer(null);
+          }}>Next</button>
         </div>
       )
     }
