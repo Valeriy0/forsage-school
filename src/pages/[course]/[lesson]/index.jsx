@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import { allCourses } from "@/helpers/lessons";
 import { CustomLink } from "@/components/CustomLink";
 import { QuestionSection } from "@/features/Lesson/QuestionSection";
+import { LessonLayout } from "@/Layouts";
 
 const Lesson = () => {
   const { query } = useRouter();
@@ -12,10 +13,16 @@ const Lesson = () => {
   const lessonInfo = allCourses?.[courseNumber]?.lessons?.[lessonNumber];
   const maxLessonSlides = lessonInfo?.slides.length;
   
-  const lessonTest = lessonInfo?.test;
+  const maxQuestions = lessonInfo?.test.length;
   const [currentQuestion, setCurrentQuestion] = useState(0);
 
-  console.log(lessonTest);
+  const nextQuestion = () => {
+    if(currentQuestion < maxQuestions - 1) {
+      setCurrentQuestion(currentQuestion + 1);
+    } else {
+      setCurrentSlide(currentSlide + 1);
+    }
+  }
 
   const prevBtn = useMemo(() => {
     return (
@@ -63,7 +70,7 @@ const Lesson = () => {
     if (currentSlide === maxLessonSlides) {
       return (
         <div className="w-full h-full flex flex-col ">
-          <QuestionSection currentQuestion={currentQuestion} setCurrentQuestion={setCurrentQuestion} lessonInfo={lessonInfo} />
+          <QuestionSection currentQuestion={currentQuestion} nextQuestion={nextQuestion} lessonInfo={lessonInfo} />
         </div>
       )
     }
@@ -96,7 +103,7 @@ const Lesson = () => {
 
 
   return (
-    <div className="h-full flex flex-col p-8 space-y-[20px] ">
+    <div className="w-full h-screen flex flex-col p-8 space-y-[20px] ">
       {/* {lessonNumber} */}
       <CustomLink href={`/courses${courseNumber + 1}`}>
       <button className="flex items-center space-x-5 sm:absolute z-[1] sm:p-4">
@@ -116,5 +123,7 @@ const Lesson = () => {
     </div>
   )
 }
+
+Lesson.Layout = LessonLayout;
 
 export default Lesson;

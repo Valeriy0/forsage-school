@@ -1,10 +1,12 @@
 import '@/styles/globals.css'
 import react from 'react'
+import { DefaultLayout } from '@/Layouts';
 
 export default function App({ Component, pageProps }) {
+  const Layout = Component.Layout || DefaultLayout;
   return (
-    <div className='w-screen h-screen'>
-      <Component {...pageProps} />
-    </div>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
   )
 }

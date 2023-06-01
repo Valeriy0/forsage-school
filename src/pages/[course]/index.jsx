@@ -34,7 +34,7 @@ const Course = () => {
 
   return (
 
-    <div className="flex flex-col items-start justify-center space-y-[20px] pb-10 sm:pb-0 sm:space-y-[0] px-[30px] pt-[30px] sm:px-[0px] relative sm:pt-0">
+    <div className="w-full flex flex-col items-start justify-center space-y-[20px] pb-10 sm:pb-0 sm:space-y-[0] px-[30px] pt-[30px] sm:px-[0px] relative sm:pt-0">
       <CustomLink href={`/`}>
       <button className="flex items-center space-x-5 sm:absolute z-[1] sm:p-4">
         <div className="w-[40px] h-[40px] bg-[#31B379] rounded-full flex items-center justify-center">
