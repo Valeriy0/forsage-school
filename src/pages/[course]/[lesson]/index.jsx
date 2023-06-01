@@ -2,6 +2,7 @@ import react, { useState, useMemo } from "react";
 import { useRouter } from "next/router";
 import { allCourses } from "@/helpers/lessons";
 import { CustomLink } from "@/components/CustomLink";
+import { QuestionSection } from "@/features/Lesson/QuestionSection";
 
 const Lesson = () => {
   const { query } = useRouter();
@@ -10,6 +11,11 @@ const Lesson = () => {
   const lessonNumber = query?.lesson?.slice(-1) - 1;
   const lessonInfo = allCourses?.[courseNumber]?.lessons?.[lessonNumber];
   const maxLessonSlides = lessonInfo?.slides.length;
+  
+  const lessonTest = lessonInfo?.test;
+  const [currentQuestion, setCurrentQuestion] = useState(0);
+
+  console.log(lessonTest);
 
   const prevBtn = useMemo(() => {
     return (
@@ -57,30 +63,7 @@ const Lesson = () => {
     if (currentSlide === maxLessonSlides) {
       return (
         <div className="w-full h-full flex flex-col ">
-          <div className="space-y-11 w-full ">
-            <div className="flex flex-col items-center justify-center space-y-4">
-              <span className="text-4xl font-bold font-montserrat">Check yourself</span>
-              <span className="font-montserrat opacity-50">Choose the correct answer</span>
-            </div>
-            <div className="flex flex-col items-center justify-center w-full ">
-              <div className="bg-white-150 rounded-[40px]">
-                <div className="bg-green-dark rounded-t-[30px]  py-9 flex items-center justify-center">
-                  <span className="font-montserrat font-bold text-2xl text-center ">How do you earn at Forsage ?</span>
-                </div>
-                <div className="space-y-5 px-[20px] py-[30px]">
-                  <div className="bg-white-120 h-[70px]  px-9 rounded-full flex items-center justify-center tests_block ">
-                    <span className="opacity-50 font-light text-center flex justify-center text-center ">Activate levels in programs and wait for passive income.</span>
-                  </div>
-                  <div className="bg-white-120 h-[70px] px-9 rounded-full flex items-center justify-center tests_block">
-                    <span className="opacity-50 font-light flex justify-center text-center">Invite partners to your team and activate levels and programs <br className="sm:hidden"/> together.</span>
-                  </div>
-                  <div className="bg-white-120 h-[70px] px-9 rounded-full flex items-center justify-center tests_block">
-                    <span className="opacity-50 font-light flex justify-center  text-center">Wait for income from your upline partner.</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <QuestionSection currentQuestion={currentQuestion} setCurrentQuestion={setCurrentQuestion} lessonInfo={lessonInfo} />
         </div>
       )
     }
