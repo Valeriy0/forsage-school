@@ -61,11 +61,17 @@ const Lesson = () => {
     }
     if (currentSlide === maxLessonSlides + 1) {
       return (
-        <div className="w-full h-full">success</div>
+        <div className="w-full h-full">
+          <div className="">
+            <span>Сongratulations!</span>
+            <img src="" alt="" />
+            <span>you have <br /> completed {lessonNumber} lesson</span>
+          </div>
+        </div>
       )
     }
       
-  }, [currentSlide, maxLessonSlides, lessonInfo, currentSlide])
+  }, [currentSlide, maxLessonSlides, lessonInfo, currentSlide, lessonNumber])
 
 
 
