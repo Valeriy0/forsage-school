@@ -35,7 +35,7 @@ const Course = () => {
   return (
 
     <div className="flex flex-col items-start justify-center space-y-[20px] pb-10 sm:pb-0 sm:space-y-[0] px-[30px] pt-[30px] sm:px-[0px] relative sm:pt-0">
-      <CustomLink href="/">
+      <CustomLink href={`/`}>
       <button className="flex items-center space-x-5 sm:absolute z-[1] sm:p-4">
         <div className="w-[40px] h-[40px] bg-[#31B379] rounded-full flex items-center justify-center">
           <img className="" src="/icons/leftArrow.svg"/>
@@ -51,9 +51,11 @@ const Course = () => {
               <span>Knowledges for leaders who are looking to help <br className="sm:hidden"/> participants become more productive, as well as for<br className="sm:hidden"/>  newcomers who are just beginning their journey.</span>
               <span>We've put together materials that will help you develop<br className="sm:hidden"/>  your team and build your business with ease. </span>
             </div>
+            <CustomLink href={`/course${courseNumber + 1}/lesson1`}>
             <button className="bg-[#31B379] px-8 py-3 rounded-[15px] sm:w-full sm:bg-white-50 sm:backdrop-blur-xl" >
               <span>Start learning</span>
             </button>
+            </CustomLink >
         </div>
         <div className={`absolute sm:hidden right-0 top-1/2 -translate-y-1/2 z-10 ${!isLoadingAnim && '!w-[55%] !h-[90%]'} `}>
           <Spline
