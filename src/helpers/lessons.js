@@ -123,17 +123,16 @@ export const course1 = {
           ]
         },
         {
-          question: '123412 ?',
-          trueAnswer: 2,
+          question: 'Who owns FORSAGE ?',
+          trueAnswer: 3,
           clue: 'Forsage is a platform for starting an online business where you can earn money by inviting people.',
           answers: [
-            'Activate levels in programs and wait for passive income.',
-            'Invite partners to your team and activate levels and programs together.',
-            'Wait for income from your upline partner.'
+            'An administrator',
+            'An international finance company',
+            'There are no owners or administrators, the platform is managed by the participants themselves.'
           ]
         }
       ]
-
     },
     // 2 урок
     {
@@ -325,10 +324,26 @@ export const course1 = {
       ],
       test: [
         {
-
+          question: 'Where can you store your wallet data (seed phrase, 12 words)?',
+          trueAnswer: 2,
+          clue: 'Forsage is a platform for starting an online business where you can earn money by inviting people.',
+          answers: [
+            'In your phone notes.',
+            'Invite partners to your team and activate levels and programs together.',
+            'Wait for income from your upline partner.'
+          ]
+        },
+        {
+          question: 'Who owns FORSAGE ?',
+          trueAnswer: 3,
+          clue: 'Forsage is a platform for starting an online business where you can earn money by inviting people.',
+          answers: [
+            'An administrator',
+            'An international finance company',
+            'There are no owners or administrators, the platform is managed by the participants themselves.'
+          ]
         }
       ]
-
     },
     // 3 урок
     {
