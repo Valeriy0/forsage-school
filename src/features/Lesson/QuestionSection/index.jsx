@@ -43,21 +43,21 @@ export const QuestionSection = ({ lessonInfo, currentQuestion, nextQuestion }) =
 
   return (
     <div className="space-y-11 w-full ">
-            <div className="flex flex-col items-center justify-center space-y-4">
-              <span className="text-4xl font-bold font-montserrat">Check yourself</span>
+            <div className="flex flex-col items-center justify-center space-y-4 sm:space-y-0">
+              <span className="text-4xl font-bold font-montserrat sm:text-3xl">Check yourself</span>
               <span className="font-montserrat opacity-50">Choose the correct answer</span>
             </div>
             <div className="flex flex-col items-center justify-center w-full ">
               <div className="bg-white-150 rounded-[40px]">
                 <div className="bg-green-dark rounded-t-[30px]  py-9 flex items-center justify-center">
-                  <span className="font-montserrat font-bold text-2xl text-center ">{lessonInfo?.test?.[currentQuestion]?.question}</span>
+                  <span className="font-montserrat font-bold text-2xl text-center sm:text-xl ">{lessonInfo?.test?.[currentQuestion]?.question}</span>
                 </div>
                 <div className="space-y-5 px-[20px] py-[30px]">
                   {lessonInfo?.test?.[currentQuestion]?.answers?.map((item, itemIndex) => {
                     const trueIndex = itemIndex + 1;
                     const answerBg = !!answer ? answer?.key === trueIndex ? answer?.isTrue ? 'bg-[#04B36E] text-white' : 'bg-[#FF5F55] text-white' : 'bg-white-120 text-white-500' : 'bg-white-120 text-white-500';
                     return (
-                    <div onClick={() => checkAnswer(trueIndex)} className={`${answerBg} h-[70px]  px-9 rounded-full flex items-center justify-center tests_block`} key={itemIndex}>
+                    <div onClick={() => checkAnswer(trueIndex)} className={`${answerBg} h-[70px]  px-9 rounded-full flex items-center justify-center tests_block sm:rounded-[20px] sm:px-0`} key={itemIndex}>
                       <span className="font-light text-center flex justify-center text-center">{item}</span>
                     </div>
                     )

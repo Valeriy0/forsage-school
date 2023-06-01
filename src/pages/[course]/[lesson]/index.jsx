@@ -59,7 +59,7 @@ const Lesson = () => {
       return (
         <div className="flex sm:flex-col bg-white-120 rounded-[30px] w-full h-full space-x-10 sm:space-x-0 sm:space-y-2.5 px-[70px] sm:px-5 sm:pt-10 sm:pb-5">
             <div className="flex flex-col justify-center items-start space-y-[70px] h-full flex-1 sm:space-y-5">
-              <span className="text-3xl font-montserrat font-semibold">
+              <span className="text-3xl font-montserrat font-semibold sm:text-xl">
                 {lessonInfo?.slides?.[currentSlide]?.title}
               </span>
               {lessonInfo?.slides?.[currentSlide]?.renderContent()}
@@ -83,8 +83,8 @@ const Lesson = () => {
     }
     if (currentSlide === maxLessonSlides + 1) {
       return (
-        <div className="w-full h-full flex flex-col items-center justify-start space-y-7 ">
-          <div className="button-gradient p-[1px] flex justify-center items-center rounded-[30px]  h-[585px] ">
+        <div className="w-full h-full flex flex-col items-center justify-start space-y-7  ">
+          <div className="button-gradient p-[1px] flex justify-center items-center rounded-[30px] h-[585px] sm:p-0  ">
             <div className="flex flex-col items-center  bg-[#131314] rounded-[30px] relative px-[68px] py-[60px] h-full ">
               <img className="absolute h-[500px] top-0 left-0 " src="/img/testFinish/leftConfity.png"/>
               <img className="absolute h-[500px] top-0 right-0 " src="/img/testFinish/rightConfity.png"/>
@@ -96,9 +96,9 @@ const Lesson = () => {
               </div>
             </div>
           </div>
-          <div className="button-gradient p-[1px] rounded-[15px]">
+          <div className="button-gradient p-[1px] rounded-[15px] sm:w-full sm:p-0">
             <CustomLink href="/courses1/lesson2">
-              <button onClick={() =>setCurrentSlide(0)} className="rounded-[15px] py-3 px-7 w-full bg-[#131314] w-full ">
+              <button onClick={() =>setCurrentSlide(0)} className="rounded-[15px] py-3 px-7 w-full bg-[#131314] sm:bg-[#31B277]  w-full ">
                 <span className="text-xl font-montserrat font-medium ">Next lesson</span>
               </button>
             </CustomLink>
