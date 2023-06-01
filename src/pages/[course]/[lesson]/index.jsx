@@ -93,7 +93,7 @@ const Lesson = () => {
           </div>
           <div className="button-gradient p-[1px] rounded-[15px]">
             <CustomLink href="/courses1/lesson2">
-              <button className="rounded-[15px] py-3 px-7 w-full bg-[#131314] w-full ">
+              <button onClick={() =>setCurrentSlide(0)} className="rounded-[15px] py-3 px-7 w-full bg-[#131314] w-full ">
                 <span className="text-xl font-montserrat font-medium ">Next lesson</span>
               </button>
             </CustomLink>
