@@ -72,7 +72,7 @@ const Course = () => {
           return (
             <a href={lessonLink} className="bg-white-150 flex items-center space-x-5 w-full p-5 rounded-[30px] lessons_block ">
               <div className="lessonItem_gradient flex items-center justify-center rounded-[15px] w-[60px] h-[60px]">
-                <img className="max-w-[75%]" src={`/icons/courses/${courseNumber + 1}/${itemIndex + 1}.svg`} alt="" />
+                <img className="max-w-[60%]" src={`/icons/courses/${courseNumber + 1}/${itemIndex + 1}.svg`} alt="" />
               </div>
               <div className="flex flex-col">
                 <span className="text-sm">Lesson {itemIndex + 1}</span>
