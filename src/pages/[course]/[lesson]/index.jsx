@@ -79,14 +79,14 @@ const Lesson = () => {
     if (currentSlide === maxLessonSlides + 1) {
       return (
         <div className="w-full h-full flex flex-col items-center justify-start space-y-7 ">
-          <div className="button-gradient p-[1px] flex justify-center items-center rounded-[30px]">
-            <div className="flex flex-col items-center bg-[#131314] rounded-[30px] relative px-[68px] py-[60px] ">
+          <div className="button-gradient p-[1px] flex justify-center items-center rounded-[30px]  h-[585px] ">
+            <div className="flex flex-col items-center  bg-[#131314] rounded-[30px] relative px-[68px] py-[60px] h-full ">
               <img className="absolute h-[500px] top-0 left-0 " src="/img/testFinish/leftConfity.png"/>
               <img className="absolute h-[500px] top-0 right-0 " src="/img/testFinish/rightConfity.png"/>
-              <div className=" flex flex-col items-center space-y-[76px]">
+              <div className=" flex flex-col items-center justify-between h-full">
                 <span className="font-montserrat text-3xl font-bold">Сongratulations!</span>
                   <img className="h-[200px] z-[11] relative " src="/img/testFinish/success.png" alt="" />
-                  <img className=" absolute top-[-25px]" src="/img/testFinish/successShadow.png"/>
+                  <img className="absolute" src="/img/testFinish/successShadow.png"/>
                 <span className="text-center text-xl">you have <br /> completed {lessonNumber + 1} lesson</span>
               </div>
             </div>
