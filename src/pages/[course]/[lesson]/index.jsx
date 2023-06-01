@@ -102,7 +102,7 @@ const Lesson = () => {
       )
     }
       
-  }, [currentSlide, maxLessonSlides, lessonInfo, currentSlide, lessonNumber])
+  }, [currentSlide, maxLessonSlides, lessonInfo, currentSlide, lessonNumber, currentQuestion])
 
 
 
