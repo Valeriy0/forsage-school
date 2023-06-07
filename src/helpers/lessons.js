@@ -463,7 +463,7 @@ export const course1 = {
 };
 
 export const course2 = {
-  timeStart: '2023-06-01T16:42Z', // время старта курса
+  timeStart: '2023-07-01T16:42Z', // время старта курса
   title: '1324', 
   key: 'start-a-business-with-forsage',
   img: '/img/1lesson/1lesson.png', // название всего курса

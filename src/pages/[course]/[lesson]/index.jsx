@@ -84,8 +84,8 @@ const Lesson = () => {
     if (currentSlide === maxLessonSlides + 1) {
       return (
         <div className="w-full h-full flex flex-col items-center justify-start space-y-7  ">
-          <div className="button-gradient p-[1px] flex justify-center items-center rounded-[30px] h-[585px] sm:p-0  ">
-            <div className="flex flex-col items-center  bg-[#131314] rounded-[30px] relative px-[68px] py-[60px] h-full ">
+          <div className="button-gradient p-[1px] flex justify-center items-center rounded-[30px] h-[585px] sm:p-0  sm:w-full">
+            <div className="flex flex-col items-center  bg-[#131314] rounded-[30px] relative px-[68px] py-[60px] h-full sm:w-full sm:px-[30px]">
               <img className="absolute h-[500px] top-0 left-0 " src="/img/testFinish/leftConfity.png"/>
               <img className="absolute h-[500px] top-0 right-0 " src="/img/testFinish/rightConfity.png"/>
               <div className=" flex flex-col items-center justify-between h-full">
@@ -112,7 +112,7 @@ const Lesson = () => {
 
 
   return (
-    <div className="w-full h-screen flex flex-col p-8 space-y-[20px] sm:p-4">
+    <div className="w-full h-screen sm:min-h-screen sm:h-full flex flex-col p-8 space-y-[20px] sm:p-4">
       {/* {lessonNumber} */}
       <CustomLink href={`/courses${courseNumber + 1}`}>
         <button className="flex items-center space-x-5 z-[1] sm:p-4">
